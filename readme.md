@@ -1,3 +1,1 @@
-# Git and Github course
-
-Crash
+# CSS Grid
