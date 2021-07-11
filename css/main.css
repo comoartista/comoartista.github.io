@@ -1105,10 +1105,10 @@ body {
   padding-top: 4rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 1.5rem -webkit-min-content 1.5rem minmax(6rem, minmax) 1.5rem 1fr;
-  -ms-grid-rows: 1fr 1.5rem min-content 1.5rem minmax(6rem, minmax) 1.5rem 1fr;
-  grid-template-rows: 1fr -webkit-min-content minmax(6rem, minmax) 1fr;
-  grid-template-rows: 1fr min-content minmax(6rem, minmax) 1fr;
+  -ms-grid-rows: 1fr 1.5rem -webkit-min-content 1.5rem minmax(6rem, -webkit-min-content) 1.5rem 1fr;
+  -ms-grid-rows: 1fr 1.5rem min-content 1.5rem minmax(6rem, min-content) 1.5rem 1fr;
+  grid-template-rows: 1fr -webkit-min-content minmax(6rem, -webkit-min-content) 1fr;
+  grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;
   -ms-grid-columns: minmax(-webkit-min-content, -webkit-max-content);
   -ms-grid-columns: minmax(min-content, max-content);
   grid-template-columns: minmax(-webkit-min-content, -webkit-max-content);
@@ -1267,6 +1267,11 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
+}
+@media only screen {
+  .features {
+    margin: 6rem 0;
+  }
 }
 
 .feature {
@@ -1568,6 +1573,11 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 7rem;
+}
+@media only screen {
+  .homes {
+    margin: 6rem 0;
+  }
 }
 
 .home {
@@ -2054,6 +2064,11 @@ body {
   background-color: #101d2c;
   grid-column: full-start/full-end;
   padding: 8rem;
+}
+@media only screen {
+  .footer {
+    padding: 7rem;
+  }
 }
 
 .nav {
