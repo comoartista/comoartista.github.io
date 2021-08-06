@@ -1,0 +1,370 @@
+@media only screen and (max-width: $bp-largest) {
+    .menu__list-item {
+        margin-left: 2rem;
+    }
+    .header {
+        height: 60vh;
+        &__button-item {
+            margin-left: 2rem;
+        }
+
+    }
+    .feature {
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 10rem;
+        grid-row-gap: 6rem;
+        text-align: center;
+        margin: 3rem 3rem 0 3rem;
+        padding: 3rem 0 7rem;
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+
+            &-heading {
+                padding-top: 2rem;
+                font-size: 1.3rem;
+                letter-spacing: 0.5px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: $bp-large) {
+    .header {
+        height: 50vh;
+        &__special-offer {
+            position: relative;
+            z-index: 10;
+        }
+        &__inner {
+            justify-content: space-between;
+            &.sticky {
+                left: 0rem;
+                right: 0rem;
+                z-index: 100;
+            }
+        }
+        &__button {
+            &-item {
+                display: none;
+            }
+        }
+    }
+    
+    .menu {
+     
+        position: absolute;
+        background-color: #fff;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 14rem 5rem;
+        height: 70%;
+        transform: translateY(-60rem);
+        transition: all 0.5s;
+        &--open {
+            transform: translateY(0);
+        }
+
+        &__list {
+            display: block;
+        }
+
+        &__list-item {
+            text-transform: none;
+            margin-left: 0;
+            font-size: 1.6rem;
+            letter-spacing: 1.3px;
+            &::after {
+                display: flex;
+                content: "";
+                display: block;
+                height: 1px;
+                width: 100%;
+                background: rgba(76, 76, 76, 0.2);
+                margin: 1.5rem 0;
+            }
+        }
+    }
+    .header__button {
+        &-item {
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            margin: 0rem;
+            margin-left: 0;
+        }
+        &-item:nth-child(2) {
+            display: none;
+        }
+    }
+    .burger {
+        &__list-item {
+            display: block;
+        }
+        &__button-user {
+            display: none;
+        }
+    }
+    .logo {
+        position: relative;
+        margin-right: 0;
+        z-index: 10;
+     
+        
+    }
+    .menu-btn {
+        order: 1;
+        display: block;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 10;
+
+        span {
+            background-color: #292929;
+            width: 2rem;
+            height: 2px;
+            display: block;
+            margin: 5px 0;
+        }
+    }
+    .top {
+        &__inner {
+            padding-top: 5rem;
+        }
+    }
+    .press {
+        grid-gap: 3rem;
+        margin: 0 6rem 0 6rem;
+        
+    }
+}
+
+@media only screen and (max-width: $bp-medium) {
+    .header {
+        height: 50vh;
+        &__special-offer {
+            position: relative;
+            z-index: 10;
+        }
+        &__inner {
+            justify-content: space-between;
+            &.sticky {
+                left: 0rem;
+                right: 0rem;
+                z-index: 100;
+            }
+        }
+    }
+    .menu {
+        position: absolute;
+        background-color: #fff;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 14rem 5rem;
+        height: 70%;
+        transform: translateY(-60rem);
+        transition: all 0.5s;
+        &--open {
+            transform: translateY(0);
+        }
+
+        &__list {
+            display: block;
+        }
+
+        &__list-item {
+            text-transform: none;
+            margin-left: 0;
+            font-size: 1.6rem;
+            letter-spacing: 1.3px;
+            &::after {
+                display: flex;
+                content: "";
+                display: block;
+                height: 1px;
+                width: 100%;
+                background: rgba(76, 76, 76, 0.2);
+                margin: 1.5rem 0;
+            }
+        }
+    }
+    .header__button {
+        &-item {
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            margin: 0rem;
+            margin-left: 0;
+        }
+        &-item:nth-child(2) {
+            display: none;
+        }
+    }
+    .burger {
+        &__list-item {
+            display: block;
+        }
+        &__button-user {
+            display: none;
+        }
+    }
+    .logo {
+        position: relative;
+        margin-right: 0;
+        z-index: 10;
+    }
+    .menu-btn {
+        order: -1;
+        display: block;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 10;
+
+        span {
+            background-color: #292929;
+            width: 2rem;
+            height: 2px;
+            display: block;
+            margin: 5px 0;
+        }
+    }
+    .footer {
+        &__inner {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 6rem;
+        }
+    }
+    .top {
+        &__inner {
+            padding-top: 38rem;
+        }
+    }
+    .products {
+        margin-top: 35rem;
+    }
+    .product {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+    }
+    .press {
+        display: grid;
+        grid-template-columns: 30rem;
+        grid-gap: 4rem;
+        margin: 0 0 0 0;
+    }
+
+    .slider {
+        background-color: #fefbf9;
+        padding-bottom: 11rem;
+
+        &__info {
+            position: relative;
+            top: 11rem;
+            left: 0;
+            right: 0;
+            transform: translate(50%, -50%);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    }
+    .slider .slick-dots {
+        bottom: 3.3rem;
+        width: auto;
+        left: 38%;
+    }
+    .feature {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 10rem;
+        grid-row-gap: 6rem;
+        text-align: center;
+        margin: 3rem 3rem 0 3rem;
+        padding: 3rem 0 7rem;
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+
+            &-heading {
+                padding-top: 2rem;
+                font-size: 1.3rem;
+                letter-spacing: 0.5px;
+            }
+        }
+    }
+    .trending {
+        &__title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5rem 0 1.5rem 0;
+            font-weight: 500;
+            letter-spacing: 0.8px;
+            &-heading {
+                font-size: 1.6rem;
+            }
+            &-text {
+                margin-left: 4rem;
+                font-size: 1.4rem;
+            }
+        }
+        &__products {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 2rem;
+            padding-bottom: 5rem;
+            &-name,
+            &-price,
+            &-sale,
+            &-compare {
+                font-size: 1.4rem;
+            }
+            &-button {
+                font-size: 1rem;
+                padding: 0.2rem 0.8rem;
+                margin-top: 0.5rem;
+                cursor: pointer;
+                opacity: 0;
+            }
+        }
+    }
+    .our-instagram {
+        &__title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5rem 0 1.5rem 0;
+            color: $title;
+            letter-spacing: 0.8px;
+
+            &-heading {
+                font-size: 1.6rem;
+            }
+            &-text {
+                font-size: 1.4rem;
+                margin-left: 4rem;
+            }
+        }
+    }
+    .instagram {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+        margin-bottom: 7rem;
+    }
+    .footer {
+        &__inner {
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 4rem;
+        }
+    }
+}
