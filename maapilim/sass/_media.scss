@@ -3,7 +3,7 @@
         margin-left: 2rem;
     }
     .header {
-        height: 60vh;
+        height: 600px;
         &__button-item {
             margin-left: 2rem;
         }
@@ -31,7 +31,7 @@
 }
 @media only screen and (max-width: $bp-large) {
     .header {
-        height: 50vh;
+        height: 600px;
         &__special-offer {
             position: relative;
             z-index: 10;
@@ -52,24 +52,34 @@
     }
     
     .menu {
-     
         position: absolute;
         background-color: #fff;
-        top: 0;
+        top: 50px;
         left: 0;
         right: 0;
         bottom: 0;
         width: 100%;
-        padding: 14rem 5rem;
-        height: 70%;
-        transform: translateY(-60rem);
+        // padding: 14rem 5rem;
+        height: 600px;
+        overflow: auto;
+        transform: translateY(0);
+        opacity: 0;
+        visibility: hidden;
         transition: all 0.5s;
         &--open {
             transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
         }
 
         &__list {
             display: block;
+            position: absolute;
+            width: 100%;
+            top: 60px;
+            left: 0;
+            padding-right: 100px;
+          
         }
 
         &__list-item {
@@ -88,18 +98,18 @@
             }
         }
     }
-    .header__button {
-        &-item {
-            border: none;
-            background-color: transparent;
-            cursor: pointer;
-            margin: 0rem;
-            margin-left: 0;
-        }
-        &-item:nth-child(2) {
-            display: none;
-        }
-    }
+    // .header__button {
+    //     &-item {
+    //         border: none;
+    //         background-color: transparent;
+    //         cursor: pointer;
+    //         margin: 0rem;
+    //         margin-left: 0;
+    //     }
+    //     &-item:nth-child(2) {
+    //         display: none;
+    //     }
+    // }
     .burger {
         &__list-item {
             display: block;
@@ -142,10 +152,10 @@
         
     }
 }
-
+////////////////////////////////////////////////
 @media only screen and (max-width: $bp-medium) {
     .header {
-        height: 50vh;
+        height: 600px;
         &__special-offer {
             position: relative;
             z-index: 10;
@@ -169,14 +179,23 @@
         width: 100%;
         padding: 14rem 5rem;
         height: 70%;
-        transform: translateY(-60rem);
+        transform: translateY(0);
+        visibility: hidden;
+        opacity: 0;
         transition: all 0.5s;
         &--open {
             transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
         }
 
         &__list {
             display: block;
+            position: absolute;
+            width: 100%;
+            top: 60px;
+            left: 0;
+            padding: 45px;
         }
 
         &__list-item {
@@ -227,6 +246,7 @@
         border: none;
         cursor: pointer;
         z-index: 10;
+        
 
         span {
             background-color: #292929;

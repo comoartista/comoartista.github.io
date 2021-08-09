@@ -5,10 +5,10 @@ $button: #ca886e;
 $footer: #4a4a4a;
 
 //RESPONSIVE BREAKPOINTS
-$bp-largest: 67.5em; //1080px/16
-$bp-large: 63.75em; //1020px/16
-$bp-medium: 47.9em; //768px/16
-$bp-small: 37.5em; //600px/16
+// $bp-largest: 80em; //1280px/16
+// $bp-large: 64em; //1024px/16
+// $bp-medium: 47.9em; //768px/16
+// // $bp-small: 37.5em; //600px/16
 
 html {
   box-sizing: border-box;
@@ -24,12 +24,6 @@ body {
 html,
 body {
   height: 100%;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
 }
 
 .main {

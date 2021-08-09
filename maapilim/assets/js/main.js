@@ -1,3 +1,4 @@
+// $( document ).ready(function() { 
 /*
 sticky header
 ----------------
@@ -29,3 +30,5 @@ mobile-menu
 $('.menu-btn').on('click', function () {
   $('.menu').toggleClass('menu--open');
 });
+
+// });
