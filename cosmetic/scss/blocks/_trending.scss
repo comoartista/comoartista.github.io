@@ -1,0 +1,120 @@
+.trending {
+    &:after {
+        content: "";
+        display: block;
+        height: 1px;
+        background: rgba(76, 76, 76, 0.2);
+        text-align: center;
+        width: 100%;
+    }
+    &__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 60px;
+        font-weight: 500;
+        letter-spacing: 0.8px;
+        @include breakpoint-down-7 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 0 20px;
+            font-weight: 500;
+            letter-spacing: 0.8px;
+        }
+        &-heading {
+            text-transform: uppercase;
+            color: $color-grey-dark-1;
+            @include breakpoint-down-7 {
+                font-size: $font-size;
+            }
+        }
+        &-text {
+            margin-left: 40px;
+            font-weight: 700;
+            color: $color-grey-dark-2;
+            @include breakpoint-down-7 {
+                font-size: $font-size - 2;
+            }
+        }
+    }
+    &__products {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 30px;
+        text-align: center;
+        transition: all 0.5s;
+        cursor: pointer;
+        padding-bottom: 80px;
+        @include breakpoint-down-7 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 20px;
+            padding-bottom: 50px;
+            font-size: $font-size - 2;
+        }
+
+        &-item {
+            &:hover {
+                .trending__products-button {
+                    opacity: 1;
+                }
+                .trending__products-sale {
+                    color: $color-primary;
+                }
+            }
+        }
+
+        &-scale {
+            overflow: hidden;
+            cursor: pointer;
+            margin-bottom: 1rem;
+        }
+        &-images {
+            transition: all 0.5s;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+        &-name {
+            color: #4c4c4c;
+            font-weight: 500;
+            letter-spacing: .8;
+            text-decoration: none;
+        }
+        &-price {
+            color: rgba(76, 76, 76, 0.4);
+            font-weight: 500;
+        }
+        &-sale {
+            color: rgba(76, 76, 76, 0.4);
+            font-weight: 500;
+        }
+        &-compare {
+            color: rgba(76, 76, 76, 0.4);
+            font-weight: 500;
+            text-decoration: line-through;
+        }
+        &-button {
+            background-color: #978873;
+            border: none;
+            border-radius: 50px;
+            color: $color-white;
+            text-transform: uppercase;
+            font-size: $font-size - 4;
+            font-weight: 700;
+            letter-spacing: 2px;
+            font-weight: 500;
+            padding: 6px 10px;
+            margin-top: 10px;
+            cursor: pointer;
+            opacity: 0;
+            @include breakpoint-down-7 {
+                font-size: $font-size - 6;
+            }
+            &:hover {
+                background-color: #a39580;
+            }
+        }
+    }
+}
