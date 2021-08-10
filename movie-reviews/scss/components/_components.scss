@@ -1,0 +1,76 @@
+/* ================================================
+     TYPOGRAPHY
+   ================================================ */
+
+%heading {
+    font-family: $font-primary;
+    font-weight: 600;
+    letter-spacing: 0.9px;
+    text-decoration: none;
+}
+
+.heading-2 {
+    @extend %heading;
+    font-size: $font-size + 14px;
+    line-height: 0.9;
+    color: $color-black;
+}
+
+.heading-3 {
+    @extend %heading;
+    font-size: $font-size + 4px;
+    letter-spacing: 0.32px;
+    color: $color-black;
+}
+
+.heading-4 {
+    @extend %heading;
+    font-size: $font-size + 6px;
+    letter-spacing: 0.32px;
+    color: $color-black;
+}
+
+.heading-5 {
+    @extend %heading;
+    font-size: $font-size + 2px;
+    letter-spacing: 0.32px;
+    color: $color-black;
+}
+
+input,
+textarea,
+select {
+    // Reset iPhone style
+    -webkit-appearance: none;
+    border: none;
+    outline: 0;
+    border-radius: 5px;
+    
+    
+    font-family: inherit;
+    font-size: $font-size - 2px;
+    font-weight: inherit;
+    line-height: 21px;
+    background-color: transparent;
+    transition: border-color 0.2s ease-in-out;
+
+    &:focus {
+        color: $color-grey-1;
+        border-color: $color-green;
+    }
+
+    
+}
+
+button {
+    background-color: transparent;
+    color: $color-white;
+    fill: $color-white;
+    padding: 0 20px 0 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        color: $color-green;
+        fill: $color-green;
+    }
+}
