@@ -1,7 +1,7 @@
 /*   IMPORT FONTS
    ================================================== */
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
 
 //   FONTS
 // ==================================================
@@ -21,6 +21,8 @@ $color-blue-1: #3B5998;
 $color-blue-2: #1DA1F2;
 $color-blue-3: #1565C0;
 $color-red: #CD201F;
+$color-yellow: #e4a100;
+
 
 $color-black: #000;
 $color-white: #fff;
@@ -68,6 +70,7 @@ body {
     font-family: $font-primary;
     font-size: $font-size;
     font-weight: $font-weight;
+    line-height: 1.5;
     color: $color-grey-1;
     background-color: $color-black;
 

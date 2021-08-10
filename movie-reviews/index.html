@@ -6,14 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="libs/slick/slick.css">
+    <link rel="stylesheet" href="libs/slick/slick-theme.css">
     <title>Jupiter Premium Movie Review</title>
 </head>
+
 <body>
     <header class="header">
         <div class="container">
             <div class="header__inner">
                 <div class="header__logo">
-                    <img class="header__logo-icon" src="img/logo.png" alt="logo icon" >
+                    <img class="header__logo-icon" src="img/logo.png" alt="logo icon">
                 </div>
                 <nav class="menu">
                     <ul class="menu__list">
@@ -31,23 +34,71 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="header__search">
-                    <input class="header__search-input" type="email" placeholder="Quick Search">
-                    <button class="header__search-button" type="submit">
-                        <svg class="header__search-icon" href="search icon">
-                            <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
-                        </svg>
-                    </button>
+                <div class="wrapper-header">
+                    <div class="header__search">
+                        <input class="header__search-input" type="email" placeholder="Quick Search">
+                        <button class="header__search-button" type="submit">
+                            <svg class="header__search-icon" href="search icon">
+                                <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <button class="header__button" type="button">Log in</button>
                 </div>
-                <button class="header__button" type="button">Log in</button>
             </div>
         </div>
     </header>
-       
+    <section class="premium-slider">
+        <div class="container">
+            <h1 class="premium-slider__heading">Jupiter Premium Movie Review</h1>
+            <p class="premium-slider__text">But I must explain to you how all this mistaken idea of denouncing pleasure and
+                praising pain was born and I will give you a complete account of the system and expound the actual.
+                teachings of the great explorer of the truth</p>
+        </div>
+
+        <div class="premium-slider__slider">
+            <div class="slider">
+                <div class="wrapper-slider">
+                    <div class="slider__item">
+                        <img src="img/movie4.jpeg"
+                            alt="Cover Knives Out">
+                        <div class="slider__info">
+                            <div class="raiting">
+                                <svg class="header__search-icon" href="star icon">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg>
+                            </div>
+                            <h3 class="slider__info-title heading-3">Knives Out</h3>
+                            <span>Animation</span>  
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper-slider">
+                    <div class="slider__item">
+                        <img src="img/movie4.jpeg"
+                            alt="Cover Knives Out">
+                        <div class="slider__info">
+                            <div class="raiting">
+                                <svg class="header__search-icon" href="star icon">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg>
+                            </div>
+                            <h3 class="slider__info-title heading-3">WER</h3>
+                            <span>Crime, <span>Horror</span></span>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="libs/slick/slick.min.js"></script>
     <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>

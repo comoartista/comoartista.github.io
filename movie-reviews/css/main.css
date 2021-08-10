@@ -1,6 +1,6 @@
 /*   IMPORT FONTS
    ================================================== */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
 /* ================================================
         BASE
       ================================================ */
@@ -12,6 +12,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 400;
+  line-height: 1.5;
   color: #b1b1b1;
   background-color: #000;
   -webkit-font-smoothing: antialiased;
@@ -513,10 +514,10 @@ button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 200px;
+  margin-right: 20px;
 }
 .header__search-input {
-  padding: 12px 90px 12px 15px;
+  padding: 12px 120px 12px 15px;
   border: 1px solid rgba(177, 177, 177, 0.4);
   margin-right: -55px;
 }
@@ -543,13 +544,44 @@ button:hover {
   font-size: 14px;
 }
 
+.wrapper-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 .menu__list-item {
-  margin-right: 20px;
+  margin-right: 40px;
   color: #fff;
   font-size: 14px;
+}
+
+.premium-slider {
+  text-align: center;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+.premium-slider__heading {
+  margin-top: 130px;
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+}
+.premium-slider__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 70px;
+}
+
+.slider__item {
+  width: 300px;
 }

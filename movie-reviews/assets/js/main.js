@@ -1,3 +1,10 @@
 $( document ).ready(function() { 
-    console.log( "ready!" );
+
+    //   SLICK SLIDER
+// ==================================================
+$('.slider').slick({
+    dots: true,
+    arrows: false
+  });
+
 });

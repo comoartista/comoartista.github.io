@@ -5,15 +5,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
     }
 
     &__search {
         display: flex;
-        margin-left: 200px;
-
+        margin-right: 20px;
         &-input {
-            padding: 12px 90px 12px 15px;
+            padding: 12px 120px 12px 15px;
             border: 1px solid $color-grey-3;
             margin-right: -55px;
 
@@ -32,13 +30,17 @@
         font-size: $font-size - 2px;
     }
 }
+.wrapper-header {
+    display: flex;
+}
 
 .menu__list {
     display: flex;
     
     &-item {
-        margin-right: 20px;
+        margin-right: 40px;
         color: $color-white;
         font-size: $font-size - 2px;
     } 
 }
+
