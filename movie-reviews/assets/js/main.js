@@ -3,7 +3,7 @@ $( document ).ready(function() {
     //   SLICK SLIDER
 // ==================================================
 $('.slider').slick({
-    dots: true,
+    dots: false,
     arrows: false
     infinite: true, // бесконечная прокрутка слайдов
     slidesToShow: 5, // показывать по 3 слайда
