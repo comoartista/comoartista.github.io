@@ -1,0 +1,37 @@
+.footer__social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  
+}
+
+.icon {  
+    //  &::before {
+    //      content: '';
+    //      height: 1px;
+    //      width: 1100px;
+    //      color: white;
+    //      border: white;
+
+    //  } 
+      
+
+    &__google {
+        background-color: $color-blue-1;
+    }
+    
+    &__twitter {
+        background-color: $color-blue-2;
+    }
+    
+    &__youtube {
+        background-color: $color-red;
+    }
+    
+    &__instagram {
+        background-color: $color-blue-3;
+    }
+}
+
+

@@ -1,0 +1,31 @@
+.tab__list {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+
+}
+.tab__link {
+    margin-right: 40px;
+
+    &-icon {
+        background-color: $color-grey-1;
+        width: 15px;
+        height: 15px;
+        border-radius: 50px;
+        fill: $color-black;
+        transform: rotate(180deg);
+    }
+}
+
+.tab__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    margin-bottom: 40px;
+}
+
+.tab-wrapper {
+   display: flex;
+   flex-direction: column;
+}
+
