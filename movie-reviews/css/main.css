@@ -467,6 +467,7 @@ select {
   -webkit-appearance: none;
   border: none;
   outline: 0;
+  border-radius: 5px;
   font-family: inherit;
   font-weight: inherit;
   line-height: 21px;
@@ -479,6 +480,20 @@ textarea:focus,
 select:focus {
   color: #b1b1b1;
   border-color: #05d65f;
+}
+
+button {
+  background-color: transparent;
+  color: #fff;
+  fill: #fff;
+  padding: 0 20px 0 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+button:hover {
+  color: #05d65f;
+  fill: #05d65f;
 }
 
 .social-icon {
