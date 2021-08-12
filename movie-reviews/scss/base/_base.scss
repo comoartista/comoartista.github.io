@@ -15,7 +15,7 @@ $font-weight: 400;
 
 $color-grey-1: rgb(177, 177, 177);
 $color-grey-2: #edecef;
-$color-grey-3: rgba(177, 177, 177, .4);
+$color-grey-3: rgba(177, 177, 177, .2);
 $color-green: #05d65f;
 $color-blue-1: #3B5998;
 $color-blue-2: #1DA1F2;
@@ -100,7 +100,7 @@ a:visited {
 
 img {
     max-width: 100%;
-    height: auto;
+    // height: auto;
     display: block;
 }
 

@@ -23,11 +23,20 @@
         &-icon {
             width: 18px;
             height: 18px;
+            &:hover {
+                color: $color-green;
+                fill: $color-green;
+            }
         }
     }
 
     &__button {
         font-size: $font-size - 2px;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            color: $color-green;
+            fill: $color-green;
+        }
     }
 }
 .wrapper-header {

@@ -35,8 +35,16 @@
     @extend %heading;
     font-size: $font-size + 2px;
     letter-spacing: 0.32px;
-    color: $color-black;
+    color: $color-white;
+    padding-bottom: 20px;
+
 }
+
+// .subtitle {
+//     font-size: $font-size - 2px;
+//     color: $color-white;
+//     padding-bottom: 20px;
+// }
 
 input,
 textarea,
@@ -45,11 +53,11 @@ select {
     -webkit-appearance: none;
     border: none;
     outline: 0;
-    border-radius: 5px;
+    // border-radius: 5px;
     
     
     font-family: inherit;
-    font-size: $font-size - 2px;
+    // font-size: $font-size - 2px;
     font-weight: inherit;
     line-height: 21px;
     background-color: transparent;
@@ -64,16 +72,16 @@ select {
 }
 
 button {
-    background-color: transparent;
-    color: $color-white;
-    fill: $color-white;
-    padding: 0 20px 0 20px;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    &:hover {
-        color: $color-green;
-        fill: $color-green;
-    }
+    // background-color: transparent;
+    // color: $color-white;
+    // fill: $color-white;
+    // padding: 0 20px 0 20px;
+    // cursor: pointer;
+    // transition: all 0.2s ease-in-out;
+    // &:hover {
+    //     color: $color-green;
+    //     fill: $color-green;
+    // }
 }
 
 .active {
