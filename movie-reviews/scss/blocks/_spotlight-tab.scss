@@ -1,31 +1,95 @@
-.tab__list {
-display: flex;
-align-items: center;
-margin-bottom: 10px;
+// .tab__list {
+// display: flex;
+// align-items: center;
+// margin-bottom: 10px;
 
-}
-.tab__link {
-    margin-right: 40px;
+// }
+// .tab__link {
+//     margin-right: 40px;
 
-    &-icon {
-        background-color: $color-grey-1;
-        width: 15px;
-        height: 15px;
-        border-radius: 50px;
-        fill: $color-black;
-        transform: rotate(180deg);
-    }
-}
+//     &-icon {
+//         background-color: $color-grey-1;
+//         width: 15px;
+//         height: 15px;
+//         border-radius: 50px;
+//         fill: $color-black;
+//         transform: rotate(180deg);
+//     }
+// }
 
-.tab__content {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 30px;
-    margin-bottom: 40px;
-}
+// .tab__content {
+//     display: grid;
+//     grid-template-columns: 25% 25% 25% 25%;
+//     grid-gap: 30px;
+//     margin-bottom: 40px;
+//     &-rating {
+//         display: flex;
+//         align-items: center;
+//         padding-top: 10px;
+//     }
+//     &-text,
+//     &-title {
+//         font-size: $font-size - 2px;
+//         color: $color-white;
+//         font-weight: 500;
+//     }
+//     &-title {
+//         padding: 10px 0 20px;
+//     }
+// }
 
-.tab-wrapper {
-   display: flex;
-   flex-direction: column;
-}
+// .tab-wrapper {
+//    display: flex;
+//    flex-direction: column;
+// }
 
+
+// .tab {
+//     &-list {
+// 		list-style: none;
+// 		overflow: hidden;
+
+//         a {
+// 			display: block;
+// 			color: $color-grey-1;
+// 			text-decoration: none;
+// 			padding: 10px 25px;
+// 			margin: 0 2px 0 0;
+// 			font-weight: 600;
+// 			text-transform: uppercase;
+// 			transition: color 0.3s linear;
+
+// 			&.active,
+// 			&:hover {
+// 				border-bottom: 2px solid $color-green;
+// 				color: $color-green;
+// 			}
+// 		}
+//     }
+
+// }
+
+// .tab-wrap {
+//     background: $color-white;
+//     border-top: 1px solid lighten($color-black, 80%);
+//     border-bottom: 1px solid lighten($color-black, 80%);
+//     color: $color-grey-1;
+//     padding: 20px 0 0;
+// }
+
+// .tab__content {
+//     display: none;
+
+//     &.active {
+//         display: block;
+//     }
+
+//     ul {
+//         list-style-position: inside;
+//         margin: 0 0 25px;
+//     }
+
+//     p {
+//         margin: 0 0 20px;
+//     }
+// }

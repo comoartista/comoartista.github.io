@@ -1,0 +1,47 @@
+.review-slider {
+    padding: 40px 0 40px;
+    &__wrapper {
+        position: relative;
+    }
+    &__item-img {
+        width: 350px;
+        position: relative;
+       margin-left: 60px;
+    
+    }
+    &__title  {
+        font-size: $font-size + 14px;
+        line-height: 0.9;
+        color: $color-white;
+        margin-bottom: 10px;
+    }
+
+    &__item-info {
+       
+        width: 550px;
+        position: absolute;
+        top: 80px;
+        left: 480px;
+        
+        
+    }
+
+    &__text {
+        font-size: $font-size - 1px;
+        padding-top: 10px;
+
+    }
+
+    &__btn {
+        background-color: $color-green;
+        border-radius: 5px;
+        padding: 15px 20px 15px 20px;
+        font-size: $font-size - 2px;
+        font-weight: 500;
+        margin-top: 25px;
+        &:hover{
+            background-color: $color-green-2;
+            color: $color-white;
+        }
+    }
+}

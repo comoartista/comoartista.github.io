@@ -2,7 +2,7 @@ $( document ).ready(function() {
 
     //   SLICK SLIDER
 // ==================================================
-$('.slider').slick({
+$('.premium-slider__slider').slick({
     // dots: false,
     arrows: false,
     infinite: true, // бесконечная прокрутка слайдов
@@ -16,7 +16,7 @@ $('.slider').slick({
 
     //   TAB
 // ==================================================
-  $('.tab-list .tab__link').click(function(event) {
+  $('.tab__list a').click(function(event) {
     event.preventDefault();
   
     $('.active').removeClass('active');
@@ -27,3 +27,23 @@ $('.slider').slick({
   });
 
 });
+
+    //   SLICK SLIDER
+// ==================================================
+$('.review-slider').slick({
+  arrows: true,
+  infinite: true,
+
+});
+
+
+
+// $('.tab-list a').click(function(event) {
+//   event.preventDefault();
+
+//   $('.active').removeClass('active');
+//   $(this).addClass('active');
+
+//   var id = this.id;
+//   $('.' + id).addClass('active');
+// });
