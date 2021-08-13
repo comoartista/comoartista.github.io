@@ -26,7 +26,7 @@ $('.premium-slider__slider').slick({
     $('.' + id).addClass('active');
   });
 
-});
+
 
     //   SLICK SLIDER
 // ==================================================
@@ -35,6 +35,9 @@ $('.review-slider').slick({
   infinite: true,
 
 });
+
+});
+
 
 
 
