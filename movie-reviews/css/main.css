@@ -439,7 +439,6 @@ button {
   font-size: 30px;
   line-height: 0.9;
   color: #fff;
-  padding-bottom: 40px;
 }
 
 .heading-3 {
@@ -674,6 +673,72 @@ span {
 .review-slider__btn:hover {
   background-color: #07863e;
   color: #fff;
+}
+
+/* Arrows */
+.slick-prev:before, .slick-next:before {
+  font-family: "slick";
+  font-size: 20px;
+  line-height: 1;
+  opacity: 0.75;
+  color: red;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.blog {
+  padding: 20px 0 200px;
+}
+.blog__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+}
+.blog__box-title {
+  display: inline-block;
+}
+.blog__box-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 30px;
+}
+.blog__box-text {
+  color: #fff;
+}
+.blog__box-icon {
+  margin-left: 2px;
+  fill: #fff;
+  width: 18px;
+  height: 18px;
+}
+.blog__items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  margin-top: 10px;
+}
+.blog__item-title {
+  padding: 15px 0 15px;
+}
+.blog__item-text {
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+.blog__item-date {
+  font-size: 12px;
 }
 
 .footer {

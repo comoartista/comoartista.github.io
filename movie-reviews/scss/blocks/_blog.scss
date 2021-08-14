@@ -1,0 +1,49 @@
+.blog {
+    padding: 20px 0 200px;
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px; 
+
+        &-title {
+            display: inline-block;
+        }
+       
+        &-all {
+            display: flex;
+            align-items: center;
+            margin-right: 30px;
+            
+        }
+        &-text {
+            color: $color-white;
+        }
+
+        
+        &-icon {
+            margin-left: 2px;
+            fill: $color-white;
+            width:18px;
+            height: 18px;
+        }
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 30px;
+        margin-top: 10px;
+    }
+
+    &__item {
+        &-title {padding: 15px 0 15px;}
+        &-text {
+            font-size: $font-size - 2px;
+            padding-bottom: 10px;
+        }
+        &-date { 
+            font-size: $font-size - 4px;
+        }
+    }
+}
