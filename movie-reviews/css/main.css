@@ -635,6 +635,29 @@ span {
   font-size: 14px;
 }
 
+.slick-prev,
+.slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: red;
+}
+
+.tabs {
+  padding-top: 40px;
+}
+
 .tab__nav {
   border-bottom: 1px solid transparent;
   margin-right: 40px;
@@ -697,6 +720,10 @@ span {
   color: #fff;
   font-weight: 500;
   padding-top: 8px;
+  cursor: pointer;
+}
+.tab__content-title:hover {
+  color: #05d65f;
 }
 
 .tab__nav-btn.active {
@@ -710,7 +737,8 @@ span {
   display: grid;
   -ms-grid-columns: 1fr 30px 1fr 30px 1fr 30px 1fr;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  grid-column-gap: 30px;
+  grid-row-gap: 40px;
 }
 
 .tab-line::before {
@@ -719,7 +747,7 @@ span {
   height: 1px;
   display: block;
   margin-bottom: 40px;
-  margin-top: -20px;
+  margin-top: -21px;
 }
 
 .review-slider {

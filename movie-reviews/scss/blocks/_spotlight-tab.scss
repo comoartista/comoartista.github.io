@@ -1,12 +1,12 @@
+.tabs {padding-top: 40px;}
+
 .tab {
     &__nav {
         border-bottom: 1px solid transparent;
         margin-right: 40px;
         padding-bottom: 20px;
-        
-        &:hover {
-           color: $color-white;
-        }
+
+        &:hover {color: $color-white;}
     }
 
     &__list {
@@ -38,15 +38,14 @@
         display: inline-block;
     }
 
-    &__item {
-        display: none;
-    }
+    &__item {display: none;}
 
     &__content-rating {
         display: flex;
         align-items: center;
         padding-top: 20px;
     }
+
     &__content-rating span {
         color: $color-white;
         margin-left: 4px;
@@ -55,26 +54,29 @@
         color: $color-white;
         font-weight: 500;
         padding-top: 8px;
+        cursor: pointer;
+        &:hover {color: $color-green;}
     }
 }
 
 .tab__nav-btn.active {
     color: $color-white;
     border-bottom: 1px solid $color-green;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
 }
 
 .tab__item.active {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+    grid-column-gap: 30px;
+    grid-row-gap: 40px;
 }
 
-.tab-line::before{
-    content: '';
+.tab-line::before {
+    content: "";
     background-color: $color-grey-3;
     height: 1px;
-    display: block; 
+    display: block;
     margin-bottom: 40px;
-    margin-top: -20px;
-} 
+    margin-top: -21px;
+}
