@@ -473,9 +473,9 @@ select {
   border: none;
   outline: 0;
   border-radius: 5px;
-  font-family: inherit;
-  font-weight: inherit;
-  line-height: 21px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
   background-color: transparent;
   -webkit-transition: border-color 0.2s ease-in-out;
   transition: border-color 0.2s ease-in-out;
@@ -635,23 +635,15 @@ span {
   font-size: 14px;
 }
 
-.slick-prev,
-.slick-next {
-  font-size: 0;
-  line-height: 0;
+.review-slider {
+  position: relative;
+}
+
+.review-slider.slick-arrow {
   position: absolute;
   top: 50%;
-  display: block;
-  width: 40px;
-  height: 40px;
-  padding: 0;
-  -webkit-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-  cursor: pointer;
-  color: transparent;
-  border: none;
-  outline: none;
-  background: red;
+  z-index: 10;
+  font-size: 0;
 }
 
 .tabs {
@@ -711,6 +703,9 @@ span {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 20px;
+}
+.tab__content-img img {
+  height: 250px;
 }
 .tab__content-rating span {
   color: #fff;
@@ -920,13 +915,13 @@ span {
   margin-top: 20px;
   border: 1px solid #05d65f;
   border-radius: 5px 6px 6px 5px;
-  margin-right: -50px;
+  margin-right: -40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 .subscribe__form-input {
-  padding: 20px 10px 20px 40px;
+  padding: 20px 10px 20px 30px;
   border: none;
   font-size: 16px;
   font-weight: 500;
@@ -948,14 +943,18 @@ span {
 }
 
 .icon__google {
+  cursor: pointer;
   background-color: #3B5998;
 }
 .icon__twitter {
+  cursor: pointer;
   background-color: #1DA1F2;
 }
 .icon__youtube {
+  cursor: pointer;
   background-color: #CD201F;
 }
 .icon__instagram {
+  cursor: pointer;
   background-color: #1565C0;
 }

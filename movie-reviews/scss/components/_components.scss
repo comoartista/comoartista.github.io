@@ -60,12 +60,10 @@ select {
     border: none;
     outline: 0;
     border-radius: 5px;
-    
-    
-    font-family: inherit;
-    // font-size: $font-size - 2px;
-    font-weight: inherit;
-    line-height: 21px;
+
+    font-size: $font-size - 2px;
+    font-weight: 300;
+    line-height: 18px;
     background-color: transparent;
     transition: border-color 0.2s ease-in-out;
 
@@ -102,5 +100,4 @@ button {
     padding: 16px 0px;
     fill: $color-white;
     margin-left: 6px;
-
 }

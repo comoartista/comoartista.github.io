@@ -45,6 +45,10 @@
         align-items: center;
         padding-top: 20px;
     }
+    &__content-img img {
+        height: 250px;
+        // width: 100%;
+    }
 
     &__content-rating span {
         color: $color-white;
@@ -80,3 +84,4 @@
     margin-bottom: 40px;
     margin-top: -21px;
 }
+

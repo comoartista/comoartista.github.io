@@ -39,9 +39,7 @@
         }
     }
 }
-.wrapper-header {
-    display: flex;
-}
+.wrapper-header {display: flex;}
 
 .menu__list {
     display: flex;
@@ -52,4 +50,3 @@
         font-size: $font-size - 2px;
     } 
 }
-
