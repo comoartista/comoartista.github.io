@@ -37,7 +37,7 @@ a:visited {
 }
 
 .container {
-    max-width: 480px;
+    max-width: 580px;
     min-width: 375px;
     margin: 100px auto;
     background-color: #1c1c1e;
@@ -123,5 +123,6 @@ span {
     display: block;
     color: #89898e;
     font-size: 13px;
+    line-height: 20px;
     text-transform: none;
 }
