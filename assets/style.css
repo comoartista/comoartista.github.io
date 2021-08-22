@@ -21,6 +21,7 @@ body {
     font-weight: 400;
     background-color: #000000;
     margin: 0;
+    padding: 10px;
 }
 
 a:link,
@@ -40,7 +41,7 @@ a:visited {
     min-width: 375px;
     margin: 100px auto;
     background-color: #1c1c1e;
-    padding: 16px;
+    padding: 16px 16px 6px 16px;
     border-radius: 10px;
 }
 
@@ -64,12 +65,18 @@ a:visited {
     width: 100%;
 }
 
-.header__social img {
+.header__social svg {
     width: 16px;
     height: 16px;
-    margin: 6px 6px 0 0;    
+    margin: 6px 4px 0 0;   
+    fill: #666668;
+    cursor: pointer;
 }
 
+.header__social svg:hover {
+    transition: 0.3s;
+    fill: #89898e;
+}
 
 /* ================================================
      LESSONS
