@@ -21,7 +21,7 @@ body {
     font-weight: 400;
     background-color: #000000;
     margin: 0;
-    padding: 16px;
+    padding: 12px;
 }
 
 a:link,
@@ -39,12 +39,17 @@ a:visited {
 .container {
     max-width: 580px;
     min-width: 375px;
-    margin: 100px auto;
+    margin: 80px auto;
     background-color: #1c1c1e;
     padding: 16px 16px 6px 16px;
     border-radius: 10px;
 }
 
+@media only screen and (max-width: 375px) { 
+    .container {
+        margin: 20px auto;
+    }
+}
 
 /* ================================================
      HEADER
@@ -54,21 +59,16 @@ a:visited {
     display: flex;
     align-items: center;
     margin-bottom: 12px;
-   
 }
 
-.header__user-photo {
-    width: 90px;
-    
-}
-.header__user-photo img {
-    width: 100%;
-}
+.header__user-photo { width: 90px; }
+
+.header__user-photo img { width: 100%; }
 
 .header__social svg {
     width: 18px;
     height: 18px;
-    margin: 6px 8px 0 0;   
+    margin: 6px 8px 0 0;
     fill: #666668;
     cursor: pointer;
 }
@@ -76,6 +76,11 @@ a:visited {
 .header__social svg:hover {
     transition: 0.3s;
     fill: #89898e;
+}
+
+.github-icon svg {
+    width: 19px;
+    height: 19px;
 }
 
 /* ================================================
