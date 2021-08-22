@@ -21,7 +21,7 @@ body {
     font-weight: 400;
     background-color: #000000;
     margin: 0;
-    padding: 10px;
+    padding: 16px;
 }
 
 a:link,
@@ -66,9 +66,9 @@ a:visited {
 }
 
 .header__social svg {
-    width: 16px;
-    height: 16px;
-    margin: 6px 4px 0 0;   
+    width: 18px;
+    height: 18px;
+    margin: 6px 8px 0 0;   
     fill: #666668;
     cursor: pointer;
 }
