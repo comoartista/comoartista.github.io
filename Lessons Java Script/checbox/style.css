@@ -1,0 +1,50 @@
+/* ================================================
+     GENERAL. CSS RESET
+   ================================================ */
+
+   *,
+   *::before,
+   *::after {
+       margin: 0;
+       padding: 0;
+       box-sizing: inherit;
+   }
+   
+   html {
+       box-sizing: border-box;
+       font-size: 16px;
+   }
+   
+   body {
+       font-family: "Noto Sans JP", sans-serif;
+       color: #eaeaea;
+       font-weight: 400;
+       background-color: #000000;
+       margin: 0;
+       padding: 12px;
+   }
+   
+   a:link,
+   a:visited {
+       text-decoration: none;
+       color: #fff;
+       transition: color 0.2s ease;
+   }
+   
+   
+   .container {
+       max-width: 580px;
+       min-width: 375px;
+       margin: 80px auto;
+       /* background-color: #1c1c1e; */
+       /* padding: 16px 16px 6px 16px;
+       border-radius: 10px; */
+   }
+   
+  
+   
+   /* ================================================
+        LAYOUT
+      ================================================ */
+   
+   
