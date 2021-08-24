@@ -121,6 +121,82 @@ a:visited {
 }
 
 /* ================================================
+          DROPDOWN
+         ================================================ */
+         .submenu {display: none;}
+         .dropdown {
+            display: none;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            width: 1000px;
+            border-radius: 0 0 20px 20px;
+            // border: 1px solid grey;
+            margin-bottom: 100px;
+            padding: 40px 20px 40px 30px;
+            background-color: white;
+            z-index: 100;
+            position: absolute;
+            &__nav {
+               width: 250px;
+                &-title {
+                    text-transform: uppercase;
+                    margin-bottom: 15px;
+                }
+                &-list {
+                    font-size: 12px;
+                    position: relative;
+                    list-style: none;
+                    line-height: 1.6;
+                }
+                &-list::after {
+                    content: "";
+                    display: block;
+                    width: 100%;
+                    height: 1px;
+                    background-color: rgb(230, 230, 230);
+                    margin: 10px 0 10px;
+                }
+            }
+        }
+        .dropdown-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin-right: 40px;
+            grid-gap: 30px;
+            
+        }
+        
+        .dropdown__items {
+        
+            &-img {
+                border-radius: 10px;
+            }
+        }
+        .dropdown__item {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.8;
+        
+            &-title {
+                font-size: 14px;
+                font-weight: 400;
+            }
+        
+            &-text {
+                font-size: 12px;
+                color: grey;
+            }
+        
+            &-cost {
+                font-size: 12px;
+                color: #00545f;
+                font-weight: 600;
+            }
+        }
+
+        
+/* ================================================
           HEADER-BOX
          ================================================ */
 
@@ -171,73 +247,3 @@ a:visited {
     }
 }
 
-/* ================================================
-          DROPDOWN
-         ================================================ */
-
-.dropdown {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    width: 1000px;
-    border-radius: 0 0 20px 20px;
-    border: 1px solid grey;
-    margin-bottom: 100px;
-    padding: 40px 20px 40px 30px;
-    &__nav {
-       width: 250px;
-        &-title {
-            text-transform: uppercase;
-            margin-bottom: 15px;
-        }
-        &-list {
-            font-size: 12px;
-            position: relative;
-            list-style: none;
-            line-height: 1.6;
-        }
-        &-list::after {
-            content: "";
-            display: block;
-            width: 100%;
-            height: 1px;
-            background-color: rgb(230, 230, 230);
-            margin: 10px 0 10px;
-        }
-    }
-}
-.dropdown-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-right: 40px;
-    grid-gap: 30px;
-    
-}
-
-.dropdown__items {
-
-    &-img {
-        border-radius: 10px;
-    }
-}
-.dropdown__item {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.8;
-
-    &-title {
-        font-size: 14px;
-        font-weight: 400;
-    }
-
-    &-text {
-        font-size: 12px;
-        color: grey;
-    }
-
-    &-cost {
-        font-size: 12px;
-        color: #00545f;
-        font-weight: 600;
-    }
-}

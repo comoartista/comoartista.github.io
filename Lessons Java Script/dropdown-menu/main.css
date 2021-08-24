@@ -127,66 +127,14 @@ a:visited {
 }
 
 /* ================================================
-          HEADER-BOX
-         ================================================ */
-.header-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 25%;
-  -webkit-transform: translate(-25%, -50%);
-          transform: translate(-25%, -50%);
-}
-.header-box__subtitle {
-  font-size: 26px;
-  font-weight: 400;
-  letter-spacing: 2.5px;
-}
-.header-box__title {
-  font-size: 130px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-.header-box__items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.header-box__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.header-box__item-price {
-  font-size: 26px;
-  font-weight: 600;
-  margin-left: 16px;
-}
-.header-box__item-day {
-  font-size: 18px;
-  margin-left: 6px;
-  margin-right: 80px;
-}
-.header-box__item-book {
-  font-size: 26px;
-  font-weight: 600;
-  margin-left: 16px;
-}
-
-/* ================================================
           DROPDOWN
          ================================================ */
+.submenu {
+  display: none;
+}
+
 .dropdown {
+  display: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -196,9 +144,11 @@ a:visited {
   margin: 0 auto;
   width: 1000px;
   border-radius: 0 0 20px 20px;
-  border: 1px solid grey;
   margin-bottom: 100px;
   padding: 40px 20px 40px 30px;
+  background-color: white;
+  z-index: 100;
+  position: absolute;
 }
 .dropdown__nav {
   width: 250px;
@@ -257,4 +207,61 @@ a:visited {
   font-size: 12px;
   color: #00545f;
   font-weight: 600;
+}
+
+/* ================================================
+          HEADER-BOX
+         ================================================ */
+.header-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  -webkit-transform: translate(-25%, -50%);
+          transform: translate(-25%, -50%);
+}
+.header-box__subtitle {
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 2.5px;
+}
+.header-box__title {
+  font-size: 130px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.header-box__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header-box__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header-box__item-price {
+  font-size: 26px;
+  font-weight: 600;
+  margin-left: 16px;
+}
+.header-box__item-day {
+  font-size: 18px;
+  margin-left: 6px;
+  margin-right: 80px;
+}
+.header-box__item-book {
+  font-size: 26px;
+  font-weight: 600;
+  margin-left: 16px;
 }
