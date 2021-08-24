@@ -1,0 +1,224 @@
+/* ================================================
+     GENERAL. CSS RESET
+   ================================================ */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  margin: 0 auto;
+
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+
+/* ================================================
+       HEADER
+      ================================================ */
+.header {
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.1))), url(../dropdown-menu/img/home.jpeg);
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url(../dropdown-menu/img/home.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  width: 100%;
+  height: 750px;
+  position: relative;
+}
+
+.menu {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 20px;
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+li {
+  list-style: none;
+  margin-right: 40px;
+}
+
+a:hover {
+  color: #00545f;
+}
+
+a {
+  color: black;
+  letter-spacing: 0.4px;
+}
+
+.contact-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: right;
+}
+
+.cal {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.tel:hover {
+  color: black;
+}
+
+.tel {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.open {
+  font-size: 14px;
+  font-weight: 400;
+  color: grey;
+}
+
+.icon {
+  margin-left: 10px;
+}
+
+.button {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  background-color: #00545f;
+  color: white;
+  text-transform: uppercase;
+  padding: 60px;
+  cursor: pointer;
+  margin-right: -20px;
+}
+
+.button:hover {
+  color: white;
+}
+
+/* ================================================
+       HEADER-BOX
+      ================================================ */
+.header-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  -webkit-transform: translate(-25%, -50%);
+          transform: translate(-25%, -50%);
+}
+
+.subtitle {
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 2.5px;
+}
+
+.title {
+  font-size: 130px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.offer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cost-price,
+.book p {
+  font-size: 26px;
+  font-weight: 600;
+  margin-left: 16px;
+}
+
+.cost-day {
+  font-size: 18px;
+  margin-left: 6px;
+}
+
+.book {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 80px;
+}
+
+p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* ================================================
+       DROPDOWN
+      ================================================ */
+.dropdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}

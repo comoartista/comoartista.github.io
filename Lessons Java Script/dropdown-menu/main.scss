@@ -1,0 +1,243 @@
+/* ================================================
+     GENERAL. CSS RESET
+   ================================================ */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 400;
+    margin: 0 auto;
+}
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+    color: black;
+    transition: color 0.2s ease;
+}
+
+/* ================================================
+          HEADER
+         ================================================ */
+
+.header {
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url(../img/home.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 750px;
+    position: relative;
+}
+
+.menu {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+
+    &__item {
+        display: flex;
+    }
+
+    &__list {
+        list-style: none;
+        margin-right: 40px;
+
+        &__link {
+            color: black;
+            letter-spacing: 0.4px;
+        }
+
+        &__link:hover {
+            color: #00545f;
+        }
+    }
+}
+
+.contact-wrap {
+    display: flex;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+
+    &__cal {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    &__tel {
+        font-size: 14px;
+        font-weight: 700;
+
+        &:hover {
+            color: black;
+        }
+    }
+
+    &__open {
+        font-size: 14px;
+        font-weight: 400;
+        color: grey;
+    }
+
+    &__icon {
+        margin-left: 10px;
+    }
+
+    &__button {
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 1.5px;
+        background-color: #00545f;
+        color: white;
+        text-transform: uppercase;
+        padding: 60px;
+        cursor: pointer;
+        margin-right: -20px;
+
+        &:hover {
+            color: white;
+        }
+    }
+}
+
+/* ================================================
+          HEADER-BOX
+         ================================================ */
+
+.header-box {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-25%, -50%);
+
+    &__subtitle {
+        font-size: 26px;
+        font-weight: 400;
+        letter-spacing: 2.5px;
+    }
+
+    &__title {
+        font-size: 130px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    &__items {
+        display: flex;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+
+        &-price {
+            font-size: 26px;
+            font-weight: 600;
+            margin-left: 16px;
+        }
+        &-day {
+            font-size: 18px;
+            margin-left: 6px;
+            margin-right: 80px;
+        }
+        &-book {
+            font-size: 26px;
+            font-weight: 600;
+            margin-left: 16px;
+        }
+    }
+}
+
+/* ================================================
+          DROPDOWN
+         ================================================ */
+
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1000px;
+    border-radius: 0 0 20px 20px;
+    border: 1px solid grey;
+    margin-bottom: 100px;
+    padding: 40px 20px 40px 30px;
+    &__nav {
+       width: 250px;
+        &-title {
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+        &-list {
+            font-size: 12px;
+            position: relative;
+            list-style: none;
+            line-height: 1.6;
+        }
+        &-list::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: rgb(230, 230, 230);
+            margin: 10px 0 10px;
+        }
+    }
+}
+.dropdown-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-right: 40px;
+    grid-gap: 30px;
+    
+}
+
+.dropdown__items {
+
+    &-img {
+        border-radius: 10px;
+    }
+}
+.dropdown__item {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.8;
+
+    &-title {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    &-text {
+        font-size: 12px;
+        color: grey;
+    }
+
+    &-cost {
+        font-size: 12px;
+        color: #00545f;
+        font-weight: 600;
+    }
+}
