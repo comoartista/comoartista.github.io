@@ -3,27 +3,30 @@
      DROPDOWN
    ================================================ */
 
-document.getElementById('nav').onmouseover = function (event) {
+   const openNavMenu = document.querySelector('open-nav-menu'),
+   closeNavMenu = document.querySelector('.close-nav-menu')
 
-  let target = event.target;
-  if (target.className == 'menu-rental') {
-    let s = target.getElementsByClassName('submenu');
-    closeMenu();
-    s[0].style.display = 'block';
-  }
-}
+// document.getElementById('nav').onmouseover = function (event) {
 
-document.onmouseover = function (event) {
-  let target = event.target;
-  console.log(event.target);
-  if (target.className != 'menu-rental' && target.className != 'submenu') {
-    closeMenu();
-  }
-}
+//   let target = event.target;
+//   if (target.className == 'menu-rental') {
+//     let s = target.getElementsByClassName('submenu');
+//     closeMenu();
+//     s[0].style.display = 'block';
+//   }
+// }
 
-function closeMenu() {
-  let subm = document.getElementsByClassName('submenu');
-  for (var i = 0; i < subm.length; i++) {
-    subm[i].style.display = "none";
-  }
-}
+// document.onmouseover = function (event) {
+//   let target = event.target;
+//   console.log(event.target);
+//   if (target.className != 'menu-rental' && target.className != 'submenu') {
+//     closeMenu();
+//   }
+// }
+
+// function closeMenu() {
+//   let subm = document.getElementsByClassName('submenu');
+//   for (var i = 0; i < subm.length; i++) {
+//     subm[i].style.display = "none";
+//   }
+// }
