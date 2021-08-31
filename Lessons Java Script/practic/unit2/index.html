@@ -18,14 +18,15 @@
             <form action="">
                 <h1 class="form-title">Заповни форму</h1>
                 <div class="form-field">
-                    <input class="name" type="text" placeholder="Як тебе звати">                 
+                    <input class="name" type="text" placeholder="Як тебе звати"required pattern="[а-яА-Я]+"
+                    title="Ім'я може мати тільки букви">                  
                 </div>
                 <div class="form-field">
-                    <input class="age" type="number" placeholder="Скільки тобі років">
+                    <input class="age" type="number" placeholder="Скільки тобі років" required>
                 </div>
 
                 <div class="form-field">
-                    <input class="like" type="text" placeholder="Що найбільше любиш">
+                    <input class="like" type="text" placeholder="Що найбільше любиш" required minlength="2" maxlength="128">
                 </div>
                 <button class="button">Відправити</button>  
             </form>
@@ -33,9 +34,9 @@
                
             
 </main>
-<footer>
+<!-- <footer>
     <span>Photo by Michael Yoder</span>
-</footer>
+</footer> -->
 
 
 
