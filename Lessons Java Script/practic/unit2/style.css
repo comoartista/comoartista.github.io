@@ -4,33 +4,37 @@
     box-sizing: border-box;
 }
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     background-image: url(../unit2/img/background.jpg);
-   
 }
+
 input {
     height: 45px;
     width: 100%;
-    color: #3B5983;
+    color: #3b5983;
     font-size: 14px;
     line-height: 16px;
-    border: 2px solid #E9F2FF;
+    border: 2px solid #e9f2ff;
     border-radius: 5px;
     padding-left: 25px;
 }
 input:focus {
     outline: none;
-    border: 2px solid #C1D9FD;
+    border: 2px solid #c1d9fd;
 }
+
 input:valid {
     border-color: greenyellow;
 }
+
 input:invalid {
     border-color: orange;
 }
+
 input:not(:focus):invalid {
-    border-color: #C1D9FD;
+    border-color: #c1d9fd;
 }
+
 main {
     height: 100vh;
     display: flex;
@@ -42,74 +46,50 @@ main {
 footer {
     display: flex;
     flex-direction: row-reverse;
-    
 }
 
 .register-form-container {
-    /* opacity: 0; */
     position: relative;
     z-index: 2;
     max-width: 415px;
     width: 100%;
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 0px 6px 50px rgba(217, 229, 255, 0.7);
     border-radius: 20px;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 38px;
     padding-bottom: 38px;
-    /* animation-name: fadeForm;
-    animation-duration: .7s;
-    animation-timing-function: ease-in-out;
-    animation-delay: 1.4s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards; */
 }
 
-/* @keyframes fadeForm {
-    0% {
-        opacity: 0;
-    }
-    25% {
-        opacity: .25;
-    }
-    50% {
-        opacity: .5;
-    }
-    75% {
-        opacity: .75;
-    }
-    100% {
-        opacity: 1;
-    }
-} */
-
 .form-title {
-    color: #30507D;
+    color: #30507d;
     font-weight: 500;
     font-size: 20px;
     line-height: 23px;
     margin-bottom: 38px;
 }
+
 .form-field {
     margin-bottom: 13px;
 }
+
 .button {
     width: 100%;
     font-weight: bold;
     font-size: 14px;
-    display:block;
+    display: block;
     height: 45px;
-    background: #247FFF;
+    background: #247fff;
     border-radius: 5px;
-    color:#fff;
+    color: #fff;
     text-transform: uppercase;
     text-align: center;
     line-height: 45px;
     cursor: pointer;
     border: none;
 }
-.button:hover {
-    background-color: #0D6CF2;
-}
 
+.button:hover {
+    background-color: #0d6cf2;
+}

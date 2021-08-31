@@ -9,5 +9,5 @@ button.onclick = function() {
     let outAge = inputAge.value
     let outLike = inputLike.value
 
-    alert("Привіт! Тебе звуть " + outName + ". " + "Тобі " + outAge + ". " + "Твоє нове хобі " + outLike + ". " + " Це круто!")
+    alert("Привіт! Тебе звуть " + outName + ". " + "Тобі " + outAge + ". " + "Ти зараз захоплюєшся " + outLike + ". " + " Це круто!")
 }
