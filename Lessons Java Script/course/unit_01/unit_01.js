@@ -109,7 +109,12 @@ console.log(d2)
 
 // Task 19.
 // Создайте div c классом s3 и div с классом s4. Получите div.s3 в переменную divS3. Выведите в консоль divS3. Теперь получите в эту же переменную divS3 блок div c классом s4. Выведите переменную divS3 в консоль. Изучите что изменилось.
-let s3 = 
+// let divs3 = document.querySelector('s3')
+// let divs3 = document.querySelector('s4')
+// console.log(divs4)
+
+
 
 // Task 20
 // Получите c помощью querySelector тег body. С помощью innerHTML присвойте ему пустую строку (...innerHTML = ''). Изучите что произошло. Закомментируйте этот код.
+// document.querySelector('body').innerHTML = ''
