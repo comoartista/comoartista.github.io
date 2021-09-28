@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    /* background-image: url(../unit2/img/background.jpg); */
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.widget {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px 20px 20px 20px;
+}
+
+.city-name {
+    font-size: 26px;
+    margin-bottom: 4px;
+}
+
+.weather {
+    font-size: 18px;
+}
+
+.temp {
+    font-size: 72px;
+}
