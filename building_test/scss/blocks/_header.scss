@@ -1,77 +1,27 @@
 .header {
-    &__inner {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 64px;
-    }
-}
-
-.menu {
-    display: flex;
-    align-items: center;
-
-    @include breakpoint-down-11 {
-        display: block;
-        position: fixed;
-        top: -100%;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: $color-white;
-        z-index: 1;
-        padding: 110px 0 0 0;
-        transition: all 0.3s ease 0s;
-    }
-
-    &__list {
-        display: flex;
-        align-items: center;
-        @include breakpoint-down-11 {
-            display: block;
-            text-align: center;
-        }
-
-        &-link {
-            font-weight: 500;
-            font-size: 15px;
-            margin-right: 24px;
-
-            &:hover {
-                text-decoration: line-through;
-            }
-        }
-    }
-    &__list-item {
-        @include breakpoint-down-11 {
-            margin-bottom: 32px;
-        }
-    }
-}
-
-.header {
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 100;
+    z-index: 15;
     background-color: $color-white;
 
-    @include breakpoint-down-11 {
-    }
     &__inner {
+        display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 0 16px 0;
-
+        height: 84px;
         position: relative;
     }
+
     &__logo {
-        width: 155px;
         position: relative;
-        z-index: 3;
-        @include breakpoint-down-5 {
+        z-index: 15;
+        &-icon {
+            @media (max-width: 1199.98px) {
+                width: 155px;
+            }
         }
     }
 
@@ -84,27 +34,90 @@
         background-color: $color-grey-2;
         // margin-top: 22px;
         position: relative;
-        z-index: 12;
+        z-index: 14;
+    }
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 15;
+    @media (max-width: 1199.98px) {
+        display: block;
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: $color-white;
+        padding: 110px 0 0 0;
+        transition: all 0.3s ease 0s;
+    }
+    @media (max-width: 1199.98px) {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        @media (max-width: 1199.98px) {
+            display: block;
+            text-align: center;
+        }
+
+        &-link {
+            font-weight: 500;
+            font-size: 15px;
+            margin-right: 24px;
+            &:hover {
+                text-decoration: line-through;
+            }
+        }
+    }
+    &__list-item {
+        @media (max-width: 1199.98px) {
+            margin-bottom: 32px;
+        }
+    }
+
+    &__mobile-bg {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.64);
+        z-index: 13;
+        &.active {
+            display: block;
+        }
     }
 }
 
 .menu.active {
-    @include breakpoint-down-11 {
+    @media (max-width: 1199.98px) {
         top: 0;
-        height: 600px;
+        height: 500px;
     }
 }
 
 .lang-menu {
+    position: relative;
+    z-index: 16;
     &:hover {
         .lang-menu__btn {
             &:before {
+                color: $color-green;
                 transform: scaleY(-1) translateY(3px);
             }
         }
         .lang-menu__item {
             display: block;
-            @include breakpoint-down-11 {
+            @media (max-width: 1199.98px) {
                 display: flex;
             }
         }
@@ -116,14 +129,14 @@
         cursor: pointer;
         background-color: $color-white;
         position: relative;
-
-        @include breakpoint-down-11 {
+        @media (max-width: 1199.98px) {
             display: none;
         }
+
         &::before {
             content: "";
             display: block;
-            background-image: url(../img/Polygon.svg);
+            background-image: url(../assets/img/svg/Polygon.svg);
             width: 6px;
             height: 3px;
             top: 50%;
@@ -135,7 +148,7 @@
         &:hover {
             color: $color-green;
             border: 1px solid $color-green;
-            @include breakpoint-down-11 {
+            @media (max-width: 1199.98px) {
                 border: none;
                 color: $color-black;
             }
@@ -144,18 +157,17 @@
 
     &__item {
         outline-offset: -10px;
-        margin-left: -36px;
+        margin-left: -38px;
+        margin-top: 4px;
         position: absolute;
         min-width: 110px;
-        outline: 1px solid $color-black;
-        outline-offset: -4px;
-        z-index: 15;
+        border: 1px solid $color-black;
+        z-index: 16;
         font-size: 16px;
         padding: 25px 15px 0px;
         background-color: $color-white;
         display: none;
-
-        @include breakpoint-down-11 {
+        @media (max-width: 1199.98px) {
             display: block;
             outline: none;
             margin-left: 0;
@@ -167,6 +179,14 @@
             justify-content: space-evenly;
             line-height: 2;
         }
+        &::before {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: 0;
+            width: 100%;
+            height: 4px;
+        }
 
         &-link {
             color: black;
@@ -174,14 +194,16 @@
             text-decoration: none;
             display: block;
             line-height: 0;
-            @include breakpoint-down-11 {
+            @media (max-width: 1199.98px) {
                 font-weight: 500;
                 font-size: 15px;
             }
+
             &:hover {
                 color: $color-green;
-                @include breakpoint-down-11 {
+                @media (max-width: 1199.98px) {
                     text-decoration: line-through;
+                    color: $color-black;
                 }
             }
         }
@@ -190,7 +212,7 @@
 
 .lang-eng {
     display: none;
-    @include breakpoint-down-11 {
+    @media (max-width: 1199.98px) {
         display: block;
     }
 }
@@ -201,9 +223,10 @@
     width: 30px;
     height: 20px;
     background-color: transparent;
-    z-index: 3;
+    z-index: 15;
     display: none;
-    @include breakpoint-down-11 {
+    cursor: pointer;
+    @media (max-width: 1199.98px) {
         display: block;
     }
 }
@@ -232,12 +255,12 @@
     content: "";
     background-color: $color-black;
     position: absolute;
-    width: 70%;
+    width: 50%;
     height: 2px;
     left: 0;
     bottom: 0;
-    margin-left: 9px;
-    transition: all 0.3s ease 0s;
+    margin-left: 15px;
+    transition: all 0.3s ease;
 }
 
 .header__burger.active:before {
