@@ -26,11 +26,11 @@ main {
         }
 
         &__partner {
-            cursor: pointer;
             display: grid;
             grid-template-columns: auto auto auto;
             grid-gap: 64px;
             margin-bottom: 35px;
+            cursor: pointer;
             @media (max-width: 767.98px) {
                 margin-bottom: 0px;
             }
@@ -38,36 +38,36 @@ main {
             &-icon1 {
                 width: 33px;
                 height: 30px;
-                background: url(../assets/img/logo_ecowool.png) no-repeat;
+                background: url(../img/logo_ecowool.png) no-repeat;
                 background-size: contain;
             }
 
             &-icon1:hover {
-                background: url(../assets/img/logo_ecowool-color.png) no-repeat;
+                background: url(../img/logo_ecowool-color.png) no-repeat;
                 background-size: contain;
             }
 
             &-icon2 {
                 width: 119px;
                 height: 30px;
-                background: url(../assets/img/logo_hunton.png) no-repeat;
+                background: url(../img/logo_hunton.png) no-repeat;
                 background-size: contain;
             }
 
             &-icon2:hover {
-                background: url(../assets/img/logo_hunton-color.png) no-repeat;
+                background: url(../img/logo_hunton-color.png) no-repeat;
                 background-size: contain;
             }
 
             &-icon3 {
                 width: 75px;
                 height: 30px;
-                background: url(../assets/img/logo_isover.png) no-repeat;
+                background: url(../img/logo_isover.png) no-repeat;
                 background-size: contain;
             }
 
             &-icon3:hover {
-                background: url(../assets/img/logo_isover-color.png) no-repeat;
+                background: url(../img/logo_isover-color.png) no-repeat;
                 background-size: contain;
             }
         }
@@ -136,7 +136,7 @@ main {
             justify-content: space-between;
             width: 309px;
             height: 215px;
-            background-image: url(../assets/img/slider-control.jpg);
+            background-image: url(../img/slider-control.jpg);
             background-size: cover;
             background-repeat: no-repeat;
             color: #fff;
@@ -148,19 +148,15 @@ main {
                 order: 1;
                 flex-direction: row;
                 justify-content: flex-start;
-                // height: 52px;
             }
         }
 
         &__item {
-            &::before {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 309px;
+            &-bg {
+                position: relative;
                 width: 90vw;
                 height: 332px;
-                background-image: url(../assets/img/eristepal.jpg);
+                background-image: url(../img/green-item.jpg);
                 background-size: cover;
                 background-repeat: no-repeat;
                 z-index: 0;
@@ -168,37 +164,37 @@ main {
                     height: 232px;
                 }
                 @media (max-width: 991.98px) {
-                    top: 200px;
+                    top: 0;
                     left: -15px;
                     width: calc(100% + 30px);
                     height: 160px;
                 }
-            }
 
-            // &::after {
-            //     content: "";
-            //     position: absolute;
-            //     top: 30px;
-            //     left: 349px;
-            //     width: 100%;
-            //     height: 275px;
-            //     background-image: url(../assets/img/svg/slider-text.svg);
-            //     background-repeat: no-repeat;
-            //     z-index: 0;
-            //     @media (max-width: 1199.98px) {
-            //         height: 175px;
-            //         background-size: contain;
-            //     }
-            //     @media (max-width: 991.98px) {
-            //         top: 214px;
-            //         left: 0;
-            //         width: 100%;
-            //         max-height: 135px;
-            //         min-height: 135px;
-            //         height: 100%;
-            //         background-size: cover;
-            //     }
-            // }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 30px;
+                    width: 100%;
+                    height: 275px;
+                    margin-left: 41px;
+                    background-image: url(../img/svg/slider-text.svg);
+                    background-repeat: no-repeat;
+                    z-index: 0;
+                    @media (max-width: 1199.98px) {
+                        height: 175px;
+                        background-size: contain;
+                    }
+                    @media (max-width: 991.98px) {
+                        top: 10px;
+                        left: 0;
+                        width: 100%;
+                        max-height: 135px;
+                        min-height: 135px;
+                        height: 100%;
+                        background-size: cover;
+                    }
+                }
+            }
         }
     }
 
@@ -207,7 +203,13 @@ main {
         justify-content: flex-end;
         align-items: flex-end;
         overflow: hidden;
-        animation: fadeIn 6s;
+
+        @media (max-width: 991.98px) {
+            margin-top: -90px;
+        }
+        @media (max-width: 575.98px) {
+            margin-top: -110px;
+        }
 
         &__wrapper {
             position: absolute;
@@ -222,7 +224,6 @@ main {
             }
             @media (max-width: 991.98px) {
                 position: relative;
-                margin-top: 60px;
                 max-width: 100%;
             }
 
@@ -282,7 +283,7 @@ main {
             &--prev {
                 &::before {
                     content: "";
-                    background-image: url(../assets/img/svg/arrow-right.svg);
+                    background-image: url(../img/svg/arrow-right.svg);
                     background-size: cover;
                     background-repeat: no-repeat;
                     z-index: 1;
@@ -295,7 +296,7 @@ main {
             &--next {
                 &::before {
                     content: "";
-                    background-image: url(../assets/img/svg/arrow-right.svg);
+                    background-image: url(../img/svg/arrow-right.svg);
                     background-size: cover;
                     background-repeat: no-repeat;
                     z-index: 1;
@@ -320,44 +321,19 @@ main {
         @media (max-width: 575.98px) {
             justify-content: center;
             margin-left: 0;
+            width: 100%;
         }
     }
     
-    .slide-elem {color: $color-green;}
+    .slide-elem { color: $color-green; }
 }
 
 @-webkit-keyframes ProgressSlide {
-    from {
-        width: 0px;
-    }
-    to {
-        width: 100%;
-    }
+    from { width: 0px; }
+    to { width: 100%; }
 }
 
 @keyframes ProgressSlide {
-    from {
-        width: 0px;
-    }
-    to {
-        width: 100%;
-    }
-}
-
-@-webkit-keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+    from { width: 0px; }
+    to { width: 100%; }
 }

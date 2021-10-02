@@ -425,12 +425,12 @@ button {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 16px 0;
-  height: 84px;
   position: relative;
+  height: 84px;
 }
 .header__logo {
   position: relative;
-  z-index: 15;
+  z-index: 16;
 }
 @media (max-width: 1199.98px) {
   .header__logo-icon {
@@ -446,6 +446,11 @@ button {
   background-color: #e0e0e0;
   position: relative;
   z-index: 14;
+}
+@media (max-width: 1199.98px) {
+  .header::after {
+    z-index: 15;
+  }
 }
 
 .menu {
@@ -518,8 +523,10 @@ button {
   background-color: rgba(0, 0, 0, 0.64);
   z-index: 13;
 }
-.menu__mobile-bg.active {
-  display: block;
+@media (max-width: 1199.98px) {
+  .menu__mobile-bg.active {
+    display: block;
+  }
 }
 
 @media (max-width: 1199.98px) {
@@ -549,11 +556,11 @@ button {
   }
 }
 .lang-menu__btn {
-  border: 1px solid #000;
-  padding: 6px 32px 6px 10px;
-  cursor: pointer;
-  background-color: #fff;
   position: relative;
+  padding: 6px 32px 6px 10px;
+  border: 1px solid #000;
+  background-color: #fff;
+  cursor: pointer;
 }
 @media (max-width: 1199.98px) {
   .lang-menu__btn {
@@ -563,7 +570,7 @@ button {
 .lang-menu__btn::before {
   content: "";
   display: block;
-  background-image: url(../assets/img/svg/Polygon.svg);
+  background-image: url(../img/svg/Polygon.svg);
   width: 6px;
   height: 3px;
   top: 50%;
@@ -585,7 +592,6 @@ button {
   }
 }
 .lang-menu__item {
-  outline-offset: -10px;
   margin-left: -38px;
   margin-top: 4px;
   position: absolute;
@@ -600,7 +606,7 @@ button {
 @media (max-width: 1199.98px) {
   .lang-menu__item {
     display: block;
-    outline: none;
+    border: none;
     margin-left: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -765,13 +771,13 @@ main .content__title {
   }
 }
 main .content__partner {
-  cursor: pointer;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto 64px auto 64px auto;
   grid-template-columns: auto auto auto;
   grid-gap: 64px;
   margin-bottom: 35px;
+  cursor: pointer;
 }
 @media (max-width: 767.98px) {
   main .content__partner {
@@ -781,31 +787,31 @@ main .content__partner {
 main .content__partner-icon1 {
   width: 33px;
   height: 30px;
-  background: url(../assets/img/logo_ecowool.png) no-repeat;
+  background: url(../img/logo_ecowool.png) no-repeat;
   background-size: contain;
 }
 main .content__partner-icon1:hover {
-  background: url(../assets/img/logo_ecowool-color.png) no-repeat;
+  background: url(../img/logo_ecowool-color.png) no-repeat;
   background-size: contain;
 }
 main .content__partner-icon2 {
   width: 119px;
   height: 30px;
-  background: url(../assets/img/logo_hunton.png) no-repeat;
+  background: url(../img/logo_hunton.png) no-repeat;
   background-size: contain;
 }
 main .content__partner-icon2:hover {
-  background: url(../assets/img/logo_hunton-color.png) no-repeat;
+  background: url(../img/logo_hunton-color.png) no-repeat;
   background-size: contain;
 }
 main .content__partner-icon3 {
   width: 75px;
   height: 30px;
-  background: url(../assets/img/logo_isover.png) no-repeat;
+  background: url(../img/logo_isover.png) no-repeat;
   background-size: contain;
 }
 main .content__partner-icon3:hover {
-  background: url(../assets/img/logo_isover-color.png) no-repeat;
+  background: url(../img/logo_isover-color.png) no-repeat;
   background-size: contain;
 }
 main .content__text {
@@ -913,7 +919,7 @@ main .gallery__control {
           justify-content: space-between;
   width: 309px;
   height: 215px;
-  background-image: url(../assets/img/slider-control.jpg);
+  background-image: url(../img/slider-control.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
@@ -936,29 +942,54 @@ main .gallery__control {
             justify-content: flex-start;
   }
 }
-main .gallery__item::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 309px;
+main .gallery__item-bg {
+  position: relative;
   width: 90vw;
   height: 332px;
-  background-image: url(../assets/img/eristepal.jpg);
+  background-image: url(../img/green-item.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 0;
 }
 @media (max-width: 1199.98px) {
-  main .gallery__item::before {
+  main .gallery__item-bg {
     height: 232px;
   }
 }
 @media (max-width: 991.98px) {
-  main .gallery__item::before {
-    top: 200px;
+  main .gallery__item-bg {
+    top: 0;
     left: -15px;
     width: calc(100% + 30px);
     height: 160px;
+  }
+}
+main .gallery__item-bg::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  height: 275px;
+  margin-left: 41px;
+  background-image: url(../img/svg/slider-text.svg);
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+@media (max-width: 1199.98px) {
+  main .gallery__item-bg::before {
+    height: 175px;
+    background-size: contain;
+  }
+}
+@media (max-width: 991.98px) {
+  main .gallery__item-bg::before {
+    top: 10px;
+    left: 0;
+    width: 100%;
+    max-height: 135px;
+    min-height: 135px;
+    height: 100%;
+    background-size: cover;
   }
 }
 main .slider {
@@ -972,8 +1003,16 @@ main .slider {
       -ms-flex-align: end;
           align-items: flex-end;
   overflow: hidden;
-  -webkit-animation: fadeIn 6s;
-          animation: fadeIn 6s;
+}
+@media (max-width: 991.98px) {
+  main .slider {
+    margin-top: -90px;
+  }
+}
+@media (max-width: 575.98px) {
+  main .slider {
+    margin-top: -110px;
+  }
 }
 main .slider__wrapper {
   position: absolute;
@@ -992,7 +1031,6 @@ main .slider__wrapper {
 @media (max-width: 991.98px) {
   main .slider__wrapper {
     position: relative;
-    margin-top: 60px;
     max-width: 100%;
   }
 }
@@ -1059,7 +1097,7 @@ main .slider__btn--prev, main .slider__btn--next {
 }
 main .slider__btn--prev::before {
   content: "";
-  background-image: url(../assets/img/svg/arrow-right.svg);
+  background-image: url(../img/svg/arrow-right.svg);
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 1;
@@ -1070,7 +1108,7 @@ main .slider__btn--prev::before {
 }
 main .slider__btn--next::before {
   content: "";
-  background-image: url(../assets/img/svg/arrow-right.svg);
+  background-image: url(../img/svg/arrow-right.svg);
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 1;
@@ -1105,6 +1143,7 @@ main .count-slides {
         -ms-flex-pack: center;
             justify-content: center;
     margin-left: 0;
+    width: 100%;
   }
 }
 main .slide-elem {
@@ -1125,21 +1164,5 @@ main .slide-elem {
   }
   to {
     width: 100%;
-  }
-}
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
   }
 }

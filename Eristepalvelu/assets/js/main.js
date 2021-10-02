@@ -1,4 +1,4 @@
-$(document).ready(function() {
+  $(document).ready(function() {
 
   // ================================================
   //   MOBILE MENU
@@ -19,6 +19,7 @@ $(document).ready(function() {
   // ================================================
   //   SLIDER
   // ================================================
+
   const slider = $('.slider__wrapper');
   const totalSlides = $(".slider__slide").length;
 
@@ -49,4 +50,3 @@ $(document).ready(function() {
   });
 
 });
-
