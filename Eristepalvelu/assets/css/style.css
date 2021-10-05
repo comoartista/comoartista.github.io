@@ -69,11 +69,6 @@ main {
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
 /* Grouping content
     ========================================================================== */
 /**
@@ -428,6 +423,11 @@ button {
   position: relative;
   height: 84px;
 }
+@media (max-width: 767.98px) {
+  .header__inner {
+    height: 64px;
+  }
+}
 .header__logo {
   position: relative;
   z-index: 16;
@@ -741,7 +741,7 @@ main .container {
   padding: 0 15px;
 }
 main .content {
-  padding: 156px 0 56px;
+  margin: 156px 0 56px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -755,19 +755,25 @@ main .content {
 @media (max-width: 767.98px) {
   main .content {
     display: block;
-    padding-top: 64px;
+    margin: 132px 0 0;
   }
 }
 main .content__title {
-  font-weight: 900;
-  line-height: 48px;
+  max-width: 700px;
   font-size: 34px;
-  width: 700px;
+  line-height: 48px;
+  font-weight: 900;
 }
 @media (max-width: 767.98px) {
   main .content__title {
-    padding-bottom: 30px;
     width: auto;
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 575.98px) {
+  main .content__title {
+    font-size: 20px;
+    line-height: 34px;
   }
 }
 main .content__partner {
@@ -781,7 +787,12 @@ main .content__partner {
 }
 @media (max-width: 767.98px) {
   main .content__partner {
-    margin-bottom: 0px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 575.98px) {
+  main .content__partner {
+    grid-gap: 0;
   }
 }
 main .content__partner-icon1 {
@@ -797,21 +808,21 @@ main .content__partner-icon1:hover {
 main .content__partner-icon2 {
   width: 119px;
   height: 30px;
-  background: url(../img/logo_hunton.png) no-repeat;
+  background: url(../img/logo_hunton2.png) no-repeat;
   background-size: contain;
 }
 main .content__partner-icon2:hover {
-  background: url(../img/logo_hunton-color.png) no-repeat;
+  background: url(../img/logo_hunton2-color.png) no-repeat;
   background-size: contain;
 }
 main .content__partner-icon3 {
   width: 75px;
   height: 30px;
-  background: url(../img/logo_isover.png) no-repeat;
+  background: url(../img/logo_isover2.png) no-repeat;
   background-size: contain;
 }
 main .content__partner-icon3:hover {
-  background: url(../img/logo_isover-color.png) no-repeat;
+  background: url(../img/logo_isover2-color.png) no-repeat;
   background-size: contain;
 }
 main .content__text {

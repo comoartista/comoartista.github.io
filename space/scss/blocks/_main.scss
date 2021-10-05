@@ -1,339 +1,167 @@
-main {
-    overflow: hidden;
-    .container {
-        padding: 0 15px;
-    }
+.about{
+    background-image: url(../img/about-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-    .content {
-        padding: 156px 0 56px;
+    &__item{
         display: flex;
         justify-content: space-between;
-        align-items: flex-end;
-        @media (max-width: 767.98px) {
-            display: block;
-            padding-top: 64px;
-        }
+        flex-wrap: wrap;
+        padding-bottom: 150px;
 
-        &__title {
-            font-weight: 900;
-            line-height: 48px;
-            font-size: 34px;
-            width: 700px;
-            @media (max-width: 767.98px) {
-                padding-bottom: 30px;
-                width: auto;
-            }
-        }
-
-        &__partner {
-            display: grid;
-            grid-template-columns: auto auto auto;
-            grid-gap: 64px;
-            margin-bottom: 35px;
-            cursor: pointer;
-            @media (max-width: 767.98px) {
-                margin-bottom: 0px;
-            }
-
-            &-icon1 {
-                width: 33px;
-                height: 30px;
-                background: url(../img/logo_ecowool.png) no-repeat;
-                background-size: contain;
-            }
-
-            &-icon1:hover {
-                background: url(../img/logo_ecowool-color.png) no-repeat;
-                background-size: contain;
-            }
-
-            &-icon2 {
-                width: 119px;
-                height: 30px;
-                background: url(../img/logo_hunton.png) no-repeat;
-                background-size: contain;
-            }
-
-            &-icon2:hover {
-                background: url(../img/logo_hunton-color.png) no-repeat;
-                background-size: contain;
-            }
-
-            &-icon3 {
-                width: 75px;
-                height: 30px;
-                background: url(../img/logo_isover.png) no-repeat;
-                background-size: contain;
-            }
-
-            &-icon3:hover {
-                background: url(../img/logo_isover-color.png) no-repeat;
-                background-size: contain;
-            }
-        }
-
-        &__text {
-            padding-bottom: 120px;
-            @media (max-width: 767.98px) {
-                padding-bottom: 30px;
-            }
+        &:ntn-child(odd){
+            flex-direction: row-reverse;
         }
     }
 
-    .gallery {
-        position: relative;
-        display: grid;
-        grid-template-columns: 309px 1fr;
-        grid-template-rows: 332px 215px;
-        margin-bottom: 64px;
-        @media (max-width: 1199.98px) {
-            grid-template-rows: 232px 215px;
-        }
-        @media (max-width: 991.98px) {
-            grid-template-columns: 1fr;
-            grid-template-rows: 200px auto;
-        }
+    &__img{
+        max-width: 100%;
+    }
 
-        &__grid {
-            @media (max-width: 991.98px) {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-        }
+    &__content{
+        width: 600px;
 
-        &__btn {
-            margin-bottom: 36px;
-            position: relative;
-            padding: 18px 60px;
-            text-transform: uppercase;
-            font-size: 16px;
+        &-title{
+            margin-bottom: 5px;
+            font-size: 30px;
+            line-height: 36px;
             font-weight: 700;
-            color: $color-white;
-            background: linear-gradient(
-                243.29deg,
-                #2fac66 34.73%,
-                #20a257 45.49%,
-                #0e9645 63.42%,
-                #048f3a 82.13%,
-                #008d36 102.73%
-            );
+           
+        }
+
+        &-subtitle{
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            font-size: 12px;
+            line-height: 14px;
+            font-weight: 400;
+            color: #036cca;
+        }
+
+        &-text{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
+
+            p{width: 165px;}
+        }
+    }
+
+    &__table{
+        margin-bottom: 50px;
+
+        &-caption{
+            caption-side: bottom;
+            text-align: left;
+            margin-top: 20px;
+            font-size: 12px;
+            line-height: 14px;
+        }
+        &-tr{
+            border: 1px solid #fff;
+            border-left: none;
+            border-right: none;
+        }
+        &-tr + &-tr{
+            font-size: 36px;
+            line-height: 43px;
+            font-weight: 700;
+            text-align: center;
+        }
+        &-td{
+            padding: 10px 30px 10px 0;
+            span{
+                font-size: 14px;
+                line-height: 17px;
+                display: block;
+            }
+        }
+    }
+}
+
+.how-to{
+    padding-bottom: 100px;
+    background-image: url(../img/how-too_bg.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__box{
+        text-align: center;
+        font-size: 18px;
+
+        & circle,
+        & text,
+        foreignObject{
+            transition: all .5s;
             cursor: pointer;
         }
-
-        &__partner {
-            display: flex;
-            width: 220px;
-            &-icon {
-                object-fit: none;
-                width: 100%;
-            }
+        
+        & g:hover circle{
+            r: 20px;
+            fill: #036cca;
         }
 
-        &__control {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            width: 309px;
-            height: 215px;
-            background-image: url(../img/slider-control.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            color: #fff;
-            position: relative;
-            @media (max-width: 991.98px) {
-                margin-top: 8px;
-                width: 100%;
-                height: 52px;
-                order: 1;
-                flex-direction: row;
-                justify-content: flex-start;
-            }
+        & g:hover text{
+            font-size: 36px;
+            fill: #036cca;
         }
 
-        &__item {
-            &-bg {
-                position: relative;
-                width: 90vw;
-                height: 332px;
-                background-image: url(../img/green-item.jpg);
-                background-size: cover;
-                background-repeat: no-repeat;
-                z-index: 0;
-                @media (max-width: 1199.98px) {
-                    height: 232px;
-                }
-                @media (max-width: 991.98px) {
-                    top: 0;
-                    left: -15px;
-                    width: calc(100% + 30px);
-                    height: 160px;
-                }
-
-                &::before {
-                    content: "";
-                    position: absolute;
-                    top: 30px;
-                    width: 100%;
-                    height: 275px;
-                    margin-left: 41px;
-                    background-image: url(../img/slider-text.svg);
-                    background-repeat: no-repeat;
-                    z-index: 0;
-                    @media (max-width: 1199.98px) {
-                        height: 175px;
-                        background-size: contain;
-                    }
-                    @media (max-width: 991.98px) {
-                        top: 10px;
-                        left: 0;
-                        width: 100%;
-                        max-height: 135px;
-                        min-height: 135px;
-                        height: 100%;
-                        background-size: cover;
-                    }
-                }
-            }
+        & g:hover foreignObject{
+            font-size: 36px;
+            fill: #036cca;
         }
     }
+}
 
-    .slider {
+foreignObject {
+    text-align: left;
+}
+
+.to-book{
+    min-height: 100vh;
+    padding-bottom: 100px;
+    background-image: url(../img/to-book_bg.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__inner{
         display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-        overflow: hidden;
-
-        @media (max-width: 991.98px) {
-            margin-top: -90px;
-        }
-        @media (max-width: 575.98px) {
-            margin-top: -110px;
-        }
-
-        &__wrapper {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            max-width: 703px;
-            width: 100%;
-            height: auto;
-            z-index: 3;
-            @media (max-width: 1199.98px) {
-                max-width: 603px;
-            }
-            @media (max-width: 991.98px) {
-                position: relative;
-                max-width: 100%;
-            }
-
-            .slick-active {
-                &::after {
-                    content: "";
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    display: block;
-                    width: 100%;
-                    height: 4px;
-                    background-color: $color-green;
-                    animation: ProgressSlide 5s both;
-                }
-            }
-        }
-
-        &__slide {
-            width: 100%;
-            height: 430px;
-            background-size: cover;
-            background-position: center center;
-            background-repeat: no-repeat;
-            @media (max-width: 1199.98px) {
-                height: 360px;
-            }
-            @media (max-width: 575.98px) {
-                height: 178px;
-            }
-        }
-
-        &__btn {
-            display: flex;
-
-            &--prev,
-            &--next {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 137px;
-                height: 84px;
-                background-color: transparent;
-                border: 0.5px solid $color-white;
-                margin: 0 -0.5px -1px;
-                cursor: pointer;
-                @media (max-width: 991.98px) {
-                    height: 100%;
-                    width: 84px;
-                    border: none;
-                    margin: 0 .3px 0;
-                    outline-offset: .5px;
-                    outline: 1px solid $color-white;
-                }
-            }
-
-            &--prev {
-                &::before {
-                    content: "";
-                    background-image: url(../img/arrow-right.svg);
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    z-index: 1;
-                    width: 30px;
-                    height: 12px;
-                    transform: rotate(180deg);
-                }
-            }
-
-            &--next {
-                &::before {
-                    content: "";
-                    background-image: url(../img/arrow-right.svg);
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    z-index: 1;
-                    width: 30px;
-                    height: 12px;
-                }
-            }
-        }
+        justify-content: space-between;
     }
 
-    .count-slides {
-        margin-top: 30px;
-        margin-left: 215px;
-        @media (max-width: 991.98px) {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 0;
-            margin-left: 36px;
-            order: 1;
-        }
-        @media (max-width: 575.98px) {
-            justify-content: center;
-            margin-left: 0;
-            width: 100%;
-        }
+    &__text{
+        margin-top: 100px;
+        margin-left: auto;
+        margin-right: 52px;
+        width: 165px;
+        font-size: 14px;
+        line-height: 17px;
     }
-    
-    .slide-elem { color: $color-green; }
+
+    &__text:first-child{
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
-@-webkit-keyframes ProgressSlide {
-    from { width: 0px; }
-    to { width: 100%; }
+.info{
+    padding-bottom: 100px;
+    background-image: url(../img/info_bg.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-@keyframes ProgressSlide {
-    from { width: 0px; }
-    to { width: 100%; }
+.special-offer {
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item{
+        
+    }
 }

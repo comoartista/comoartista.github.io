@@ -5,23 +5,28 @@ main {
     }
 
     .content {
-        padding: 156px 0 56px;
+        margin: 156px 0 56px;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
         @media (max-width: 767.98px) {
             display: block;
-            padding-top: 64px;
+            margin: 132px 0 0;
         }
 
         &__title {
-            font-weight: 900;
-            line-height: 48px;
+            max-width: 700px;
             font-size: 34px;
-            width: 700px;
+            line-height: 48px;
+            font-weight: 900;
             @media (max-width: 767.98px) {
-                padding-bottom: 30px;
                 width: auto;
+                padding-bottom: 30px;
+            }
+
+            @media (max-width: 575.98px) {
+                font-size: 20px;
+                line-height: 34px;
             }
         }
 
@@ -32,7 +37,10 @@ main {
             margin-bottom: 35px;
             cursor: pointer;
             @media (max-width: 767.98px) {
-                margin-bottom: 0px;
+                margin-bottom: 30px;
+            }
+            @media (max-width: 575.98px) {
+                grid-gap: 0;
             }
 
             &-icon1 {
@@ -50,24 +58,24 @@ main {
             &-icon2 {
                 width: 119px;
                 height: 30px;
-                background: url(../img/logo_hunton.png) no-repeat;
+                background: url(../img/logo_hunton2.png) no-repeat;
                 background-size: contain;
             }
 
             &-icon2:hover {
-                background: url(../img/logo_hunton-color.png) no-repeat;
+                background: url(../img/logo_hunton2-color.png) no-repeat;
                 background-size: contain;
             }
 
             &-icon3 {
                 width: 75px;
                 height: 30px;
-                background: url(../img/logo_isover.png) no-repeat;
+                background: url(../img/logo_isover2.png) no-repeat;
                 background-size: contain;
             }
 
             &-icon3:hover {
-                background: url(../img/logo_isover-color.png) no-repeat;
+                background: url(../img/logo_isover2-color.png) no-repeat;
                 background-size: contain;
             }
         }

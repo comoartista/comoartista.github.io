@@ -13,6 +13,9 @@
         padding: 0 16px 0;
         position: relative;
         height: 84px;
+        @media (max-width: 767.98px) {
+            height: 64px;
+        }
     }
 
     &__logo {
@@ -161,7 +164,6 @@
     }
 
     &__item {
-        // outline-offset: -10px;
         margin-left: -38px;
         margin-top: 4px;
         position: absolute;
