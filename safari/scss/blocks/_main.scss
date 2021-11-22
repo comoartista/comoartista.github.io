@@ -1,0 +1,135 @@
+.header {
+  background-image: url(../img/main-bg.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 16px 0 49px;
+    color: #fff;
+  }
+
+  &__phone {
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 700;
+
+    &-number {
+      margin-left: 19px;
+      font-size: 16px;
+      line-height: 1.3;
+      font-weight: 400;
+      background-color: #886239;
+      border-radius: 22px;
+      padding: 12px 31px;
+    }
+  }
+
+  &__title {
+    font-family: "PT Serif", serif;
+    font-size: 90px;
+    line-height: 1.3;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: auto;
+  }
+
+  &__content {
+    &-description {
+      margin-bottom: 40px;
+      font-size: 20px;
+      line-height: 1.3;
+      font-weight: 700;
+    }
+
+    &-btn {
+      padding: 20px 54px;
+      color: #fff;
+      background-color: #886239;
+      border-radius: 30px;
+    }
+  }
+
+  &__arrow {
+    text-align: center;
+    padding-bottom: 14px;
+  }
+}
+
+.menu {
+  width: 100%;
+  margin-top: 15px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding: 27px 0 24px;
+  &__list {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+  }
+}
+
+.direction {
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 32px;
+    column-gap: 33px;
+    margin: 100px 0;
+
+    &-item {
+      border: 1px solid #d9d9de;
+    }
+
+    &-text {
+      font-size: 16px;
+      line-height: 1;
+      padding: 12px 19px;
+    }
+  }
+}
+
+.travel-info {
+  padding: 32px 0 50px;
+  background-image: url(../img/benefits-bg.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 56px;
+    padding: 52px 54px;
+  }
+
+  &__text {
+    padding-top: 15px;
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 400;
+  }
+}
+
+.popular {
+  &__title {
+    padding: 100px 0;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
