@@ -1,0 +1,14 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    height: 50px;
+    border-color: #212121;
+}
+
+.menu {
+    margin: 0;
+    padding: 10px 70px;
+    list-style: none;
+}
