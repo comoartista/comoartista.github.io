@@ -514,6 +514,7 @@ nav {
 .footer_submenu-link {
   font-weight: 300;
   font-size: 11px;
+  line-height: 11px;
   text-transform: uppercase;
   color: #999999;
   text-decoration: none;
@@ -524,6 +525,7 @@ nav {
   font-weight: 300;
   font-size: 11px;
   text-transform: uppercase;
+  text-decoration: none;
   color: #1CA8C3;
   text-align: center;
 }
@@ -605,6 +607,13 @@ nav {
   .reasons_descr {
     padding-top: 20px;
     width: 300px;
+  }
+
+  .footer_mobile {
+    display: block;
+  }
+  .footer_mobile_item img {
+    width: 100%;
   }
 }
 @media (max-width: 767px) {
@@ -704,6 +713,70 @@ nav {
   .car_img {
     width: 100%;
   }
+
+  .footer_divider {
+    margin-top: 24px;
+    margin-bottom: 30px;
+    width: 255px;
+    height: 6px;
+  }
+  .footer_wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 21px;
+  }
+  .footer_wrapper > div {
+    width: 100%;
+  }
+  .footer_wrapper > div:nth-child(1) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .footer_wrapper > div:nth-child(2) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .footer_wrapper > div:nth-child(3) {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .footer_social {
+    margin: 0 auto;
+    margin-bottom: 19px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 156px;
+  }
+  .footer_links {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .footer_links-main {
+    margin-bottom: 10px;
+  }
+  .footer_links-item {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .footer_submenu {
+    margin: 0 0 10px;
+  }
+  .footer_lang {
+    margin-bottom: 17px;
+  }
+  .footer_mobile {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin: 0 auto;
+  }
 }
 @media (max-width: 575px) {
   nav {
@@ -794,6 +867,15 @@ nav {
     line-height: 16px;
   }
 
+  .mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .mobile_item {
     width: 100%;
   }

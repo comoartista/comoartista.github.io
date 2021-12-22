@@ -90,6 +90,16 @@
             width: 300px;
         }
     }
+
+
+    .footer_mobile {
+        display: block;
+        &_item {
+            img {
+                width: 100%;
+            }        
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -184,6 +194,66 @@
     .car_img  {
         width: 100%;
     }
+
+    .footer {
+        &_divider {
+            margin-top: 24px;
+            margin-bottom: 30px;
+            width: 255px;
+            height: 6px;
+        }
+        &_wrapper {
+            flex-direction: column;
+            padding-top: 21px;
+        }
+    
+        &_wrapper > div {
+            width: 100%;
+
+            &:nth-child(1) {
+                order: 2;
+            }
+            &:nth-child(2) {
+                order: 1;
+            }
+            &:nth-child(3) {
+                order: 3;
+            }
+        }
+
+        &_social {
+            margin: 0 auto;
+            margin-bottom: 19px;
+            order: 1;
+            width: 156px;
+        }
+
+        &_links {
+            order: 2;
+
+            &-main {
+                margin-bottom: 10px;
+            }
+
+            &-item {
+                font-size: 14px;
+                line-height: 14px;
+            }
+        }
+
+        &_submenu {
+            margin: 0 0 10px;
+        }
+
+        &_lang {
+            margin-bottom: 17px;
+        }
+
+        &_mobile {
+            order: 3;
+            margin: 0 auto;
+        }
+    }
 }
 
 @media (max-width: 575px) {
@@ -277,6 +347,8 @@
     }
 
     .mobile {
+        display: flex;
+        flex-direction: column;
         &_item {
             width: 100%;
         }

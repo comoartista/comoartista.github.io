@@ -511,6 +511,7 @@ nav {
         &-link {
             font-weight: 300;
             font-size: 11px;
+            line-height: 11px;
             text-transform: uppercase;
             color: #999999;
             text-decoration: none;
@@ -523,6 +524,7 @@ nav {
         font-weight: 300;
         font-size: 11px;
         text-transform: uppercase;
+        text-decoration: none;
         color: $color-blue;
         text-align: center;
     }
