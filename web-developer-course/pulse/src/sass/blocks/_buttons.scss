@@ -1,0 +1,21 @@
+.button {
+    width: 153px;
+    height: 32px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 500;
+    text-transform: uppercase; 
+    background-color: $color-red;
+    color: $color-white;
+    &__main {
+        margin-top: 67px;
+        width: 303px;
+        height: 54px;
+        font-size: 16px;
+        line-height: 16px;
+    }
+}
