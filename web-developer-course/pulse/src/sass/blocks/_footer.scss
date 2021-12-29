@@ -1,0 +1,45 @@
+.footer {
+    position: relative;
+    &__info {
+        padding: 50px 68px 60px 68px;
+        position: absolute;
+        height: 0px;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        width: 460px;
+        height: 270px;
+        background-color: $color-red;
+        color: $color-white;
+    }
+    &__addr {
+        font-weight: 500;
+        font-size: 20px;
+    }
+    &__phone {
+        margin-top: 36px;
+        font-weight: 700;
+        font-size: 20px;
+        color: $color-white;
+        text-decoration: none;
+        &:hover {
+            color: $color-white;
+        }
+    }
+    &__social {
+        margin-top: 36px;
+        display: flex;
+        justify-content: center;
+        &-item {
+            width: 52px;
+            height: 52px;
+            img {
+                width: 100%;
+            }
+            &:nth-child(2) {
+                margin: 0 27px 0;
+            }
+        }    
+    }
+}

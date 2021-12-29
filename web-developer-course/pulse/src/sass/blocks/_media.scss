@@ -13,6 +13,13 @@
             align-items: center;
         }
     }
+    .feedback {
+        &__img {
+            margin-right: 25px; 
+            width: 140px;
+            height: 140px;
+        }
+    }
 }
 
 @media (max-width: 575px) {
@@ -48,24 +55,18 @@
         }
     }
     .advantages {
-        &__items {
-            display: flex;
+        &__wrapper  {
             flex-direction: column;
             align-items: center;
-            padding-top: 35px!important;
-            
+            margin-top: 35px;
         }
-        &__item {
-            &-icon {
-                display: block;
-                padding-top: 15px!important;
-            }
-            &-title {
-                padding-top: 15px!important;
-            }
-            &-text {
-                padding-top: 15px;
-            }
+ 
+        &__title {
+            margin-top: 15px;
+        }
+        &__text {
+            margin-bottom: 20px;
         }
     }
 }
+
