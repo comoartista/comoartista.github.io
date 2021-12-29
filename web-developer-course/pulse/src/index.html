@@ -5,15 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pulse</title>
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
-    <!-- <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/> -->
-
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <div class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <header class="header">
                 <div class="header__logo">
@@ -54,25 +49,25 @@
                 <div class="promo__link">или <a href="#">ПЕРЕЙТИ В КАТАЛОГ</a></div>
             </div>
         </div>
-    </div>
+    </section>
     
     <div class="advantages">
         <div class="container">
             <h2 class="heading2">НАШИ ПРЕИМУЩЕСТВА</h2>
             <div class="advantages__wrapper">
-                    <div class="advantages__item">
+                    <div class="advantages__item wow animate__fadeInUp animate__animated" data-wow-duration="2s" data-wow-delay="1s">
                             <img class="advantages__icon" src="icons/advantages/award.png" alt="award">
                         <h3 class="advantages__title">Делимся опытом</h3>
                         <div class="advantages__text">Наши сотрудники всегда готовы поделиться своим опытом, так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</div>
                     </div>
 
-                    <div class="advantages__item">
+                    <div class="advantages__item wow animate__fadeInUp animate__animated" data-wow-duration="2s" data-wow-delay="2s">
                             <img class="advantages__icon" src="icons/advantages/heart.png" alt="heart">
                         <h3 class="advantages__title">Заботимся о здоровье</h3>
                         <div class="advantages__text">Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!</div>
                     </div>
 
-                    <div class="advantages__item">
+                    <div class="advantages__item wow animate__fadeInUp animate__animated" data-wow-duration="2s" data-wow-delay="3s">
                             <img class="advantages__icon" src="icons/advantages/boots.png" alt="boots">
                         <h3 class="advantages__title">Учим бегать</h3>
                         <div class="advantages__text">Помогаем с обучением правильной технике бега! Дружим с крупнейшей школой бега в России - <a href="#">I LOVE RUNNING.</a></div>
@@ -85,10 +80,10 @@
         <div class="container">
             <h2 class="heading2 heading2-left">Получите бесплатную консультацию <br> по подбору пульсометра </h2>
             <div class="consultation__descr">Просто заполните форму заявки <br> и мы перезвоним вам в течении 10 минут</div>
-            <form class="feed-form" action="#">
-                <input required placeholder="Ваше имя" type="text">
-                <input required placeholder="Ваше телефон" type="number">
-                <input required placeholder="Ваше мейл" type="email">
+            <form id="consultation-form" class="feed-form" action="#">
+                <input name="name" placeholder="Ваше имя" type="text">
+                <input name="phone" placeholder="Ваше телефон">
+                <input name="email" placeholder="Ваше мейл" type="email">
                 <button class="button button_submit">заказать КОНСУЛЬТАЦИЮ</button>
             </form>
         </div>
@@ -406,9 +401,9 @@
           <div class="modal__subtitle">Просто заполните форму заявки</div>
           <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
           <form class="feed-form feed-form_mt25" action="#">
-            <input required placeholder="Ваше имя" type="text">
-            <input required placeholder="Ваше телефон" type="number">
-            <input required placeholder="Ваше мейл" type="email">
+            <input name="name" placeholder="Ваше имя" type="text">
+            <input name="phone" placeholder="Ваше телефон">
+            <input name="email" placeholder="Ваше мейл" type="email">
             <button class="button button_submit">заказать КОНСУЛЬТАЦИЮ</button>
         </form>
       </div>
@@ -418,24 +413,32 @@
         <div class="modal__subtitle">Ваш заказ:</div>
         <div class="modal__descr">Пульсометр Polar FT1</div>
         <form class="feed-form feed-form_mt25" action="#">
-          <input required placeholder="Ваше имя" type="text">
-          <input required placeholder="Ваше телефон" type="number">
-          <input required placeholder="Ваше мейл" type="email">
+            <input name="name" placeholder="Ваше имя" type="text">
+            <input name="phone" placeholder="Ваше телефон">
+            <input name="email" placeholder="Ваше мейл" type="email">
           <button class="button button_submit">Купить</button>
       </form>
     </div>
   </div>
 
-  <div class="modal modal_mini" id="thanks">
-    <div class="modal__close">&times;</div>
-    <div class="modal__subtitle">Спасибо за вашу заявку!</div>
-    <div class="modal__descr">Наш менеджер свяжется с вами  в ближайшее время!</div>
-</div>
-</div>
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Спасибо за вашу заявку!</div>
+            <div class="modal__descr">Наш менеджер свяжется с вами  в ближайшее время!</div>
+        </div>
+    </div>
+    <a href="#up" class="pageup">
+        <img src="icons/chevron-circle-up-solid.svg" alt="up">
+    </a>
+
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
+
     <script src="js/script.js"></script>
 </body>
 </html>
