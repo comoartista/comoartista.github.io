@@ -22,9 +22,11 @@
     background-color: $main-color;
     margin: 25px auto 0 auto;
 }
-p {
+
+h1, h2, h3, h4, h5, h6, p {
     margin-bottom: 0;
 }
+
 
 @import 'blocks/price';
 @import 'blocks/about';

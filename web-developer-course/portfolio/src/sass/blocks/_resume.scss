@@ -4,10 +4,9 @@
         padding: 60px 65px 0 65px;
         display: grid;
         grid-template-columns: repeat(2, 425px);
-        column-gap: 135px;
+        justify-content: space-between;
     }
     &__column {
-        
         &-title {
             position: relative;
             padding-left: 35px;
@@ -34,7 +33,7 @@
                     height: calc(100% + 14px);
                     background: #000000;
                     left: 0;
-                    top: -14px;
+                    top: -8px;
                 }
             }
         }
@@ -82,5 +81,4 @@
             line-height: 18px;
         }
     }
-    
 }
