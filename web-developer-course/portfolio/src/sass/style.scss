@@ -22,6 +22,10 @@
     background-color: $main-color;
     margin: 25px auto 0 auto;
 }
+p {
+    margin-bottom: 0;
+}
+
 @import 'blocks/price';
 @import 'blocks/about';
 @import 'blocks/contacts';
