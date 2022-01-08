@@ -1,0 +1,86 @@
+.resume {
+    padding-top: 125px;
+    &__wrapper {
+        padding: 60px 65px 0 65px;
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 135px;
+    }
+    &__column {
+        
+        &-title {
+            position: relative;
+            padding-left: 35px;
+            &:before {
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                border-radius: 100%;
+                background: $main-color;
+                left: -7px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        ul {
+            list-style-type: none;
+            li {
+                position: relative;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    width: 1px;
+                    height: calc(100% + 14px);
+                    background: #000000;
+                    left: 0;
+                    top: -14px;
+                }
+            }
+        }
+    }
+    &__item {
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            width: 43px;
+            height: 1px;
+            background: #000000;
+            top: 64px;
+        }
+        &-head {
+            position: relative;
+            padding: 45px 0 0 100px; 
+            h4 {
+                margin-bottom: 0;
+            }
+        }
+        &-icon {
+            position: absolute;
+            top: 55px;
+            left: 43px;
+            @include before_circle;
+            &:before {
+                top: -9px;
+            }
+            
+            img {
+                position: absolute;
+                left: 17px;
+                top: 5px;
+            }
+        }
+        &-location {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        &-body {
+            padding-top: 12px;
+            padding-left: 43px;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+    
+}

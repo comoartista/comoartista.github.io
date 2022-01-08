@@ -1,0 +1,31 @@
+.tools {
+    margin-top: 125px;
+    &__wrapper {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: repeat(2, minmax(270px auto));
+        grid-auto-rows: minmax(270px auto);
+        gap: 13px;  
+    }
+    &__item {
+        padding: 30px;
+        border: 1px solid #000000;
+        &-icon {
+            img {
+            }
+        }
+        &-title {
+            padding-top: 20px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 21px;
+        }
+        &-descr {
+            padding-top: 15px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }  
+    }
+}

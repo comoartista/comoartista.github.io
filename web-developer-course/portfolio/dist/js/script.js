@@ -21,3 +21,10 @@ window.addEventListener("keydown", (e) => {
                 menu.classList.remove('active');
     }
 });
+
+const counters = document.querySelectorAll('.scale__text-procent'),
+      lines = document.querySelectorAll('.scale__line-top');
+      
+      counters.forEach( (item, i) => {
+          lines[i].style.width = item.innerHTML;
+      });

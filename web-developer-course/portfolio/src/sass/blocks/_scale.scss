@@ -1,0 +1,45 @@
+.scale {
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: repeat(2, 70px);
+    column-gap: 45px;
+    row-gap: 30px;
+    &__item {
+        width: 100%;
+    }
+    &__text {
+        display: flex;
+        justify-content: space-between;
+        &-title {
+            position: relative;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 21px;
+            @include before_circle;
+            &:before {
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+            }
+        }
+        &-procent {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 21px;
+        }
+    }
+    &__line{
+        margin-top: 27px;
+        height: 14px;
+        width: 100%;
+        border-radius: 4px;
+        background-color: #E8E4DE;
+        &-top {
+            height: 14px;
+            width: 75%;
+            border-radius: 4px;
+            background-color: $main-color;
+        }
+    }
+}

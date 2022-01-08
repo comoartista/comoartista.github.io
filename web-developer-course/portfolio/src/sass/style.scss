@@ -6,6 +6,9 @@
 
 * {
     font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
     margin: 0;
     padding: 0;
 }
@@ -15,12 +18,21 @@
     margin: 0 auto;
 }
 
-
+.divider {
+    width: 60px;
+    height: 3px;
+    background-color: $main-color;
+    margin: 25px auto 0 auto;
+}
+@import 'blocks/price';
 @import 'blocks/about';
-@import 'blocks/benefit';
+@import 'blocks/contacts';
+@import 'blocks/resume';
 @import 'blocks/button';
 @import 'blocks/menu';
+@import 'blocks/portfolio';
 @import 'blocks/promo';
+@import 'blocks/scale';
 @import 'blocks/sidepanel';
 @import 'blocks/title';
-
+@import 'blocks/tools';
