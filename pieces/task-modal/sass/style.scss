@@ -1,0 +1,61 @@
+* {
+    color: #fffff;
+   
+}
+.container {
+    max-width: 992px;
+    background: #0F0F10;
+    border-radius: 30px;
+    &__wrapper {
+        padding: 30px;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__left {
+        display: flex;
+        p {
+            margin-left: 20px;
+        }
+    }
+    &__center {
+        img {
+            width: 60px;
+            height: 60px;
+        }
+    }
+    &__right {
+        &:nth-child(odd) {
+            margin-left: 20px;
+        }
+    }
+}
+
+.viev {
+    margin-top: 30px;
+    margin-left: 50px;
+    &__wrapper {
+        display: flex;        
+    }
+    &__column {
+        display: flex;
+        flex-direction: column;
+    }
+    &__person {
+        width: 20px;
+        height: 20px;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.tabs {
+    &__headers {
+    display: flex;
+    justify-content: center;
+    }
+}
