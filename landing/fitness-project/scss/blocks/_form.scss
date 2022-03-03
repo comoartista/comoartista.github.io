@@ -1,0 +1,35 @@
+.contacts {
+    background: #f7f7f7;
+    &__form {
+        margin: 0 auto;
+        max-width: 800px;
+
+    }
+    &__input,
+    &__textarea {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 20px;
+    }
+    label {
+        font-size: 14px;
+    }
+    input, textarea {
+        height: 50px;
+        padding: 10px;
+        color: #333;
+        border: 1px solid #cccccc;
+        &:active, &:hover, &:focus {
+            border: 1px solid #db1212;
+        }
+    }
+    textarea {
+        min-height: 150px;
+    }
+    .error {
+        border: 1px solid $primary-color;
+    } 
+    label.error {
+        border: none;
+    } 
+}

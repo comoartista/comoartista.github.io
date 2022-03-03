@@ -1,0 +1,43 @@
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/reset';
+@import 'base/typography';
+
+
+.container {
+    margin: 0 auto;
+    max-width: 1270px;
+    padding: 0 15px;
+}
+
+.btn-primary {
+    align-self: flex-start;
+    background: $primary-color;
+    color: white;
+    padding: 13px 40px;
+    border: none;
+    font: 600 16px/1.6 "Poppins", sans-serif;
+    cursor: pointer;
+    transition: background 0.3s linear;
+    &:hover {
+        background: $black;
+    }
+}
+
+
+
+
+
+
+@import 'blocks/about';
+@import 'blocks/blog';
+@import 'blocks/faq';
+@import 'blocks/footer';
+@import 'blocks/form';
+@import 'blocks/header';
+@import 'blocks/hero';
+@import 'blocks/services';
+@import 'blocks/tab';
+@import 'blocks/topbar';
+@import 'blocks/whyus';
+@import 'blocks/media';

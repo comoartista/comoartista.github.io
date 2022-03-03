@@ -1,0 +1,45 @@
+.header {
+    &__wrapper {
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: $white;
+    }
+    &__logo {
+        font-size: 30px;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: $primary-color;
+    }
+}
+.navbar {
+    display: flex;
+    &__link {
+        color: $black;
+        margin: 0 0 0 40px;
+    } 
+}
+.hamburger {
+    display: none;
+    background: $primary-color;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s linear;
+    &:hover {
+        background: $black;
+    }
+    &__wrapper {
+        height: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        span {
+            display: block;
+            width: 13px;
+            height: 2px;
+            background: #ffffff;
+        }
+    }
+}

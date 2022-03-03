@@ -1,0 +1,26 @@
+.footer {
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+    &__col {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    li {
+        position: relative;
+        margin: 0 0 0 20px;
+    }
+    li:not(last-child):before {
+        content: "";
+        position: absolute;
+        left: -20px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 5px;
+        height: 5px;
+        border-radius: 50px;
+        background: $primary-color;
+    }
+}

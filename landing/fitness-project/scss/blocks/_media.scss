@@ -1,0 +1,118 @@
+@media (max-width: 1200px) {
+  
+
+}
+@media (max-width: 992px) {
+
+    .hamburger {
+        display: block;
+    }
+    .navbar {
+        display: block;
+        background: $black; 
+        padding-top: 20px;
+        position: absolute;
+        top: 0;
+        width: 230px;
+        height: 100%;
+        z-index: 10;
+        left: -100%;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .6s linear;
+
+        &.active {
+            left: 0;
+            visibility: visible;
+            opacity: 1;
+        }
+        &__list {
+            color: $white;
+            margin: 20px 0 20px 0px;
+        } 
+        &__link {
+            color: $white;
+            margin: 0px 0 20px 30px;
+            font-size: 14px;
+        } 
+    }
+
+}
+@media (max-width: 768px) {
+    h2 {
+        font-size: 26px;
+        font-weight: 900;
+        line-height: 1.1;
+        color: #333333;
+    }
+    p {
+        font-size: 14px;
+
+    }
+    .btn-primary {
+        font-size: 14px;
+    }
+    .infobar {
+        span {
+            display: none;
+            margin-left: 0px;
+        }
+    }
+    .about {
+        &__wrapper {
+            padding: 40px 0 70px 0; 
+        }
+    }
+    .whyus {
+        padding: 40px 0 40px;
+        &__title {
+            max-width: 640px;
+        }
+        &__block {
+            display: block;
+            justify-content: space-between;
+        }
+        &__item {
+            margin: 0 0 15px;
+        }
+    }
+    .services {
+        &__content {
+            grid-template-columns: 1fr;
+        }
+    }
+    .blog {
+        &__block {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+@media (max-width: 576px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .hero {
+        &__wrapper {
+            padding: 70px 0;
+        }
+    }
+    .about {
+        &__wrapper {
+            grid-template-columns: 1fr; 
+        }
+        &__photo {
+            margin: 0 0 20px;
+        }
+    }
+    .tabheader {
+        display: flex;
+        &__item {
+            padding: 10px 7px;
+            font-size: 14px;
+        }
+    }
+    .tabcontent li {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "js_petrychenko"
+		},
+		{
+			"path": "mozilor_site"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true,
+		"liveServer.settings.multiRootWorkspaceName": "js_petrychenko"
+	}
+}

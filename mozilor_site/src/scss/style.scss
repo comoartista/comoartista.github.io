@@ -1,0 +1,26 @@
+// Global SCSS imports
+@import './vars';
+@import './reset';
+@import './global';
+@import './fonts';
+@import './header';
+@import './hero';
+@import './brands';
+@import './info';
+@import './question';
+@import './pluses';
+
+// Sections SCSS files imports
+@import './MainPage/products';
+@import './MainPage/innovation';
+@import './AboutPage/stats';
+@import './CareerPage/photos';
+@import './CareerPage/recommend';
+@import './CareerPage/jobs';
+@import './ContactsPage/contacts';
+// @import './ContactsPage/contacts';
+
+@import './footer';
+
+// Libs 
+@import './libs/swiper';

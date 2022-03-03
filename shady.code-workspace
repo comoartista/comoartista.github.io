@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "shady-rhymes"
+		},
+		{
+			"path": "mozilor_site"
+		},
+		{
+			"path": "js_petrychenko"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true,
+		"liveServer.settings.multiRootWorkspaceName": "js_petrychenko"
+	}
+}

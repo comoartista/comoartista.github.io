@@ -1,0 +1,136 @@
+//tilda
+.play, .stop {
+    width: 100px;
+    height: 100px;
+    img {
+        width: 100%;
+    }
+}
+
+// Container
+.container {
+    max-width: ($containerWidth + $containerPadding) + px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 $containerSidePadding+px;
+
+    @media (max-width: $breakpoint992) {
+        max-width: 970px;
+    }
+
+    @media (max-width: $breakpoint768) {
+        max-width: 750px;
+    }
+
+    @media (max-width: $breakpoint480) {
+        max-width: none;
+    }
+}
+
+// Body Locked
+body {
+    font-family: 'Europe', sans-serif;
+    
+    &.locked {
+        overflow: hidden;
+    }
+}
+
+.btn {
+    padding: 14px 32px;
+    background: $redColor;
+    color: $whiteColor;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: bold;
+    display: inline-block;
+    @media (max-width: $breakpoint992) {
+        padding: 12px 26px;
+    }
+    &:hover {
+        background: #d30834 ;
+        transition: .3s all easy;
+    }
+}
+
+.btn__outline {
+    // margin-top: 20px;
+    padding: 14px 32px;
+    border: 1px solid $redColor;
+    color: $redColor;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: bold;
+    display: inline-block;
+
+    @media (max-width: $breakpoint992) {
+        padding: 12px 26px;
+    }
+    &:hover {
+        background: $redColor;
+        color: $whiteColor;
+        transition: .3s all easy;
+    }
+}
+.section {
+    @media (max-width: $breakpoint992) {
+        padding: 75px 0;
+    }
+    @media (max-width: $breakpoint768) {
+        padding: 50px 0;
+    }
+}
+.section__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 62px;
+    color: $blueColor;
+    &.title__center {
+        text-align: center;
+    }
+    @media (max-width: $breakpoint992) {
+        font-size: 32px;
+        line-height: 50px;
+    }
+    @media (max-width: $breakpoint768) {
+        font-size: 26px;
+        line-height: 42px;
+    }
+    @media (max-width: $breakpoint480) {
+        font-size: 28px;
+        line-height: 34px;
+    }
+    span {
+        color: $redColor;
+    }
+}
+
+.section__subtitle {
+    margin-top: 16px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 27px;
+    color: $grayColor;
+    &.subtitle__center {
+        text-align: center;
+    }
+}
+
+.about__wrapper {
+    background: linear-gradient(268.52deg, #E3E7F6 -52.27%, rgba(227, 231, 246, 0) 138.23%);
+}
+// Animations
+// Fade
+@keyframes fade {
+    0% {
+        opacity: 0; 
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
