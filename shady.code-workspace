@@ -1,13 +1,13 @@
 {
 	"folders": [
 		{
-			"path": "shady-rhymes"
-		},
-		{
 			"path": "mozilor_site"
 		},
 		{
 			"path": "js_petrychenko"
+		},
+		{
+			"path": "shady"
 		}
 	],
 	"settings": {
