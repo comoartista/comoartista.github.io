@@ -25,7 +25,6 @@ for (let i = 1; i < 8; i++) {
     num3++;
 }
 
-
 for (let i = 1; i < 8; i++) {
     if (i === 6) {
         break; //дозволяє перервати цикл 
@@ -33,7 +32,6 @@ for (let i = 1; i < 8; i++) {
 
     console.log(i);
 }
-
 
 for (let i = 1; i < 10; i++) {
     if (i === 6) {
