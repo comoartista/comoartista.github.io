@@ -52,14 +52,23 @@ const personalMovieDB = {
         };
     },
     writeYourGenres: function() {
-        for (let i = 1; i <= 3; i++) {
-            let genre = prompt(`"Ваш любимый жанр под номером ${i}"?`);
+        for (let i = 1; i <= 2; i++) {
+        //     let genre = prompt(`"Ваш любимый жанр под номером ${i}"?`);
 
-            if (genre === '' || genre === null) {
-                console.log('Неккорeктні дані');
-                i--;
+        //     if (genre === '' || genre === null) {
+        //         console.log('Неккорeктні дані');
+        //         i--;
+        //     } else {
+        //         personalMovieDB.genres[i - 1] = genre;
+        //     }
+            let genres = prompt(`"Введіть ваші улюблені жанри через кому ${i}"?`).toLocaleLowerCase();
+
+            if (genres === '' || genre === null) {
+                        console.log('Неккорeктні дані');
+                        i--;
             } else {
-                personalMovieDB.genres[i - 1] = genre;
+                personalMovieDB.genres = genres.split(', ')
+                personalMovieDB.genres.sort();
             }
         }
 
