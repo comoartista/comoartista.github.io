@@ -28,6 +28,11 @@ hearts.forEach(element => {
     element.style.backgroundColor = 'blue';
 });
 
+// Приклад зі звичайною функцією
+// hearts.forEach(function(element){
+//     element.style.backgroundColor = 'blue';
+// });
+
 //Створення елемента на сторінці
 const div = document.createElement('div');
 // const text = document.createTextNode('Тут була я'); //застаріле значення
@@ -63,4 +68,3 @@ div.innerHTML = "<h1>Hello</h1>";
 // div.insertAdjacentHTML("beforeend", '<h2>Hello<h2>');
 // div.insertAdjacentHTML("afterbegin", '<h2>Hello<h2>');
 // div.insertAdjacentHTML("afterend", '<h2>Hello<h2>');
-
