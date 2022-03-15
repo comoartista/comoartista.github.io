@@ -33,12 +33,21 @@ btns[0].addEventListener('click', () => {
 //     }
 // });
 
-btns.forEach(btn => {
-    btn.addEventListener('click', () => {
+//Спосіб який люблять в гуглі, перевірка на співпадіння (matches)
+wrapper.addEventListener('click', (e) => { 
+    if (e.target && e.target.matches("button.red")) {
         console.log("Hello");
-    });
+    }
 });
 
+
+// btns.forEach(btn => {
+//     btn.addEventListener('click', () => {
+//         console.log("Hello");
+//     });
+// });
+
+//Створення нового елементу і вставляння в батьківський елемент
 const btn = document.createElement('button');
 btn.classList.add('red');
 wrapper.append(btn); 
