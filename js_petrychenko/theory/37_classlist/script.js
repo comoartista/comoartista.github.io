@@ -2,11 +2,12 @@ const btns = document.querySelectorAll('button'),
       wrapper = document.querySelector('.btn-block');
 
 // console.log(btns[0].classList.length)
-// console.log(btns[0].classList.item(1));
+// console.log(btns[0].classList.item(1));//дає отримати клас під визначеним індексом
 // console.log(btns[1].classList.add('red', 'strong'));
 // console.log(btns[0].classList.remove('blue'));
 // console.log(btns[0].classList.toggle('blue'));
 
+//contains — перевіряє наявність класа на визначеному елементі, повертає булінове значення: якщо клас є то true, нема - то false
 // if (btns[1].classList.contains('red')) { //якщо є клас red на елементі
 //     console.log('red');
 // }
@@ -34,6 +35,7 @@ btns[0].addEventListener('click', () => {
 // });
 
 //Спосіб який люблять в гуглі, перевірка на співпадіння (matches)
+//(продвинуте делегування)
 wrapper.addEventListener('click', (e) => { 
     if (e.target && e.target.matches("button.red")) {
         console.log("Hello");
@@ -50,4 +52,4 @@ wrapper.addEventListener('click', (e) => {
 //Створення нового елементу і вставляння в батьківський елемент
 const btn = document.createElement('button');
 btn.classList.add('red');
-wrapper.append(btn); 
+wrapper.append(btn);  
