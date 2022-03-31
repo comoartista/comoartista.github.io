@@ -54,12 +54,11 @@ window.addEventListener('DOMContentLoaded', function() {
             'hours': hours,
             'minutes': minutes,
             'seconds': seconds
-
         };
     }
 
     function getZero(num) {
-        if (num >= 0 && num <10) {
+        if (num >= 0 && num < 10) {
             return `0${num}`;
         } else {
             return num;
@@ -74,7 +73,7 @@ window.addEventListener('DOMContentLoaded', function() {
               seconds = timer.querySelector('#seconds'),
               timeInterval = setInterval(updateClock, 1000);
     
-        updateClock()
+        updateClock();
 
         function updateClock() {
             const t = getTimeRemaining(endtime);
