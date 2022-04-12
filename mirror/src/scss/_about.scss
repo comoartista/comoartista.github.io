@@ -1,0 +1,37 @@
+.section {
+    &__about {
+        margin-top: 100px;
+        @media (max-width: $breakpoint992) {
+            margin-top: 75px;
+        }
+        @media (max-width: $breakpoint768) {
+            margin-top: 50px;
+        }
+    }
+}
+.about {
+    margin: 0 auto;
+    max-width: 590px;
+    &__title {}
+    &__subtitle {
+        margin-top: 20px;
+        font-size: 22px;
+        line-height: 32px;
+        @media (max-width: $breakpoint480) {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    &__list {
+        margin-top: 10px;
+        font-size: 16px;
+        line-height: 24px;
+        @media (max-width: $breakpoint480) {
+            font-size: 14px;
+            line-height: 26px;
+        }
+    }
+    &__item {
+        list-style: disc inside;
+    }
+}
