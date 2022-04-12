@@ -8,6 +8,12 @@
 		},
 		{
 			"path": "shady"
+		},
+		{
+			"path": "wordpress_petrychenko"
+		},
+		{
+			"path": "../../../../Applications/MAMP/htdocs/childhood"
 		}
 	],
 	"settings": {

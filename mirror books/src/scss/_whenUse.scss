@@ -1,0 +1,85 @@
+.section {
+    &__whenUse {
+        margin: 70px 0;
+        @media (max-width: $breakpoint992) {
+            margin: 70px 0 140px;   
+        }
+        @media (max-width: $breakpoint768) {
+            margin: 50px 0 120px; 
+        }
+        
+    }
+}
+.whenUse {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    @media (max-width: $breakpoint1200) {
+        justify-content: space-evenly;
+    }
+    @media (max-width: $breakpoint992) {
+        flex-direction: column;
+        align-items: center;
+    }
+    &__item {
+        &-img {
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            img {
+                width: 520px;
+                height: auto;
+                @media (max-width: $breakpoint1200) {
+                    width: 480px;                
+                }
+                @media (max-width: $breakpoint768) {
+                    width: 400px; 
+                }
+                @media (max-width: $breakpoint480) {
+                    width: 300px; 
+                }
+            }
+        }
+        &-title {
+            padding-top: 80px;
+            @media (max-width: $breakpoint1200) {
+                padding-top: 70px;              
+            }
+            @media (max-width: $breakpoint992) {
+                padding-top: 0px;    
+            }
+        }
+        &-list {
+            margin-top: 20px;
+        }
+        &-link {list-style-type: disc;}
+        &-text {
+            margin-top: 10px;
+            padding: 10px;
+            max-width: 375px;
+            border: 1px solid #edeaea;
+            border-radius: 10px;
+        }
+    }
+    &__sticker {
+        position: absolute;
+        right: -50px;
+        bottom: 82px;
+        @media (max-width: $breakpoint1200) {
+            right: 14px;
+            bottom: 38px;
+        }
+        @media (max-width: $breakpoint992) {
+            right: 208px;
+            bottom: -89px;  
+        }
+        @media (max-width: $breakpoint768) {
+            right: 124px;
+            bottom: -90px;
+        }
+        img {
+            width: 120px;
+            height: auto;
+        }
+    }
+}

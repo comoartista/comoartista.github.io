@@ -1,0 +1,60 @@
+.section {
+    &__using {
+    }
+}
+.container {
+}
+.using {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    @media (max-width: $breakpoint992) {
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__item {
+        flex: 0 1 50%;
+        @media (max-width: $breakpoint992) {
+            flex-direction: column;
+        }
+        &-block {
+            max-width: 380px;
+        }
+        &-subtitle {
+            margin-top: 20px;
+        }
+    }
+
+.swiper {
+    width: 600px;
+    @media (max-width: $breakpoint992) {
+        margin-bottom: 20px;
+    }
+    @media (max-width: $breakpoint768) {
+        width: 400px;
+    }
+    @media (max-width: $breakpoint480) {
+        width: 300px;
+    }
+    &-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        img {
+            max-width: 600px;
+            @media (max-width: $breakpoint768) {
+                max-width: 400px;
+            }
+            @media (max-width: $breakpoint480) {
+                max-width: 300px;
+            }
+        }
+    }
+    &-pagination {}
+    &-button {}
+    &-button {}
+} }

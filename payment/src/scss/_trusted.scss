@@ -1,0 +1,41 @@
+.section {
+    &__trusted {
+        padding: 50px 0;
+        background-color: #FAF9FA;
+        display: flex;
+        text-align: center;
+    }
+}
+.container {
+}
+.trusted {
+    &__title {
+        margin-bottom: 46px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 28px;
+        color: $primary;
+    }
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 69px;
+        row-gap: 40px;
+        justify-content: center;
+    } 
+    &__item {
+        // margin-top: 46px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+    &__img {}
+    &__text {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 14px;
+        color: $primary;
+    }
+}
