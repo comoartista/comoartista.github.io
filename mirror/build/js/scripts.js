@@ -1,3 +1,4 @@
+// Custom Scripts
 // Мобильное меню бургер
 function burgerMenu() {
     const burger = document.querySelector('.burger')
