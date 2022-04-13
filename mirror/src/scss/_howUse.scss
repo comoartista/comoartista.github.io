@@ -1,0 +1,66 @@
+.section {
+    &__howUse {
+        margin-top: 100px;
+        @media (max-width: $breakpoint992) {
+            margin-top: 75px;
+        }
+        @media (max-width: $breakpoint768) {
+            margin-top: 50px;
+        }
+    }
+}
+.howUse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    @media (max-width: $breakpoint1200) {
+        gap: 30px;
+    }
+    @media (max-width: $breakpoint992) {
+        flex-direction: column;;
+    }
+    &__item {
+        flex: 0 1 50%;
+        @media (max-width: $breakpoint768) {
+            flex: 0 1 100%;
+        }
+        &-title {}
+        &-subtitle {}
+        &-text {
+            max-width: 370px;
+            @media (max-width: $breakpoint992) {
+                max-width: 450px;
+            }
+            @media (max-width: $breakpoint768) {
+                max-width: 100%;
+            }
+        }
+    }
+}
+.swiper {
+    width: 600px;
+    @media (max-width: $breakpoint768) {
+        max-width: 480px;
+    }
+    @media (max-width: $breakpoint480) {
+        width: 300px;
+    }
+    &-wrapper {}
+    &-slide {
+        img {
+            width: 600px;
+            @media (max-width: $breakpoint768) {
+                width: 480px;
+            }
+            @media (max-width: $breakpoint480) {
+                width: 300px;
+            }
+
+        }
+    }
+    &-pagination {}
+    &-button {}
+    &-button {}
+    &-scrollbar {}
+}

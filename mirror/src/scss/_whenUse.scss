@@ -1,0 +1,78 @@
+.section_whenUse {
+    margin-top: 100px;
+    @media (max-width: $breakpoint992) {
+        margin-top: 75px;
+    }
+    @media (max-width: $breakpoint768) {
+        margin-top: 50px;
+    }
+}
+.whenUse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    position: relative;
+    @media (max-width: $breakpoint992) {
+        flex-direction: column;
+        gap: 0;
+    }
+		&__img {
+            max-width: 100%;
+            height: auto;
+            img {
+                width: 500px;
+                @media (max-width: $breakpoint768) {
+                    width: 430px;
+                }
+                @media (max-width: $breakpoint480) {
+                    width: 300px;
+                }
+            }
+        }
+		&__item {
+            margin-bottom: 100px;
+            flex: 0 1 50%;
+        }
+		&__title {}
+		&__list {margin-top: 10px;}
+		&__link {list-style: disc inside;}
+		&__text {
+            margin-top: 15px;
+            padding: 20px 20px;
+            max-width: 440px;
+            border: .5px solid #c0c0c0;
+            border-radius: 10px;
+            @media (max-width: $breakpoint768) {
+                margin-top: 8px;
+                padding: 12px;
+                max-width: 430px;
+            }
+        }
+        &__sticker {
+            position: absolute;
+            bottom: 58px;
+            right: 120px;
+            @media (max-width: $breakpoint992) {
+                bottom: 16px;
+                right: 222px;
+            }
+            @media (max-width: $breakpoint768) {
+                bottom: 16px;
+                right: 143px;
+            }
+            @media (max-width: $breakpoint480) {
+                bottom: 21px;
+                right: 66px
+            }
+            img {
+                width: 140px;
+                @media (max-width: $breakpoint768) {
+                    width: 120px;
+                }
+                @media (max-width: $breakpoint480) {
+                    width: 110px;
+                }
+            }
+        }
+}
