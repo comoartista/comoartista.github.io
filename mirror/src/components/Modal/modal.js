@@ -1,6 +1,6 @@
 // Модальное окно
 function bindModal(trigger, modal, close) {
-  trigger = document.querySelector(trigger),
+  trigger = document.querySelector('.modal__btn'),
     modal = document.querySelector(modal),
     close = document.querySelector(close)
 

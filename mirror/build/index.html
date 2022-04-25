@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>Папір вислухає все</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
@@ -18,10 +20,10 @@
             <div class="navbar">
                 <div class="logo"><a href="#"><img src="./img/logo1.svg" alt="logo"></a> </div>
                 <ul class="menu">
-                    <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Про щоденник</a></li>
-                    <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Як користуватися?</a></li>
-                    <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Оформити передзамовлення</a></li>
-                    <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Про нас</a></li>
+                    <li class="menu__item"><a href="#about" class="menu__item-link" data-scroll>Про щоденник</a></li>
+                    <li class="menu__item"><a href="#howUse" class="menu__item-link" data-scroll>Як користуватися?</a></li>
+                    <li class="menu__item"><a href="#order" class="menu__item-link" data-scroll>Оформити передзамовлення</a></li>
+                    <li class="menu__item"><a href="#authors" class="menu__item-link" data-scroll>Про нас</a></li>
                 </ul>
                 <div class="burger">
                     <span></span>
@@ -41,21 +43,33 @@
                 <div class="hero__item-img"><img src="./img/hero.jpg" alt=""></div>
             </div>
             <div class="hero__item">
-                <div class="hero__item-play">
+                
+                <!-- <script>
+                    function play() {
+                      var audio = document.getElementById("audio");
+                      audio.play();
+                    }
+                  </script>
+              
+                  <input type="button" value="PLAY" onclick="play()">
+                  <audio id="audio" src="../audio/audio.mp3"></audio> -->
+
+                <audio src="../audio/audio.wav" autoplay></audio>
+                <div class="hero__item-play block">
                     <svg width="5" height="6" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0.271 0.0554783C0.35278 0.0133583 0.4446 -0.00537135 0.53635 0.00132865C0.62809 0.00803865 0.71621 0.0399184 0.791 0.0934784L4.291 2.59348C4.3558 2.63973 4.4086 2.70079 4.4451 2.77158C4.4816 2.84238 4.5006 2.92085 4.5006 3.00048C4.5006 3.0801 4.4816 3.15858 4.4451 3.22937C4.4086 3.30016 4.3558 3.36122 4.291 3.40748L0.791 5.90749C0.71623 5.96099 0.62816 5.99289 0.53646 5.99959C0.44476 6.00629 0.352991 5.98759 0.271241 5.94549C0.189481 5.90339 0.12091 5.83959 0.0730603 5.76109C0.0252003 5.68259 -6.97041e-05 5.59239 2.95881e-07 5.50049V0.500478C-9.97041e-05 0.408558 0.0251502 0.318388 0.0729602 0.239888C0.12077 0.161378 0.18929 0.0975683 0.271 0.0554783Z" fill="#FFFBF5"/>
                     </svg>
                 </div>
                 <h1 class="hero__item-title">Папір вислухає все</h1>
                 <h2 class="hero__item-subtitle">Терапевтичний щоденник, який дає спокій</h2>
-                <a href="#"><button class="hero__item-btn btn">Оформити передзамовлення</button>
+                <a href="#order"><button class="hero__item-btn btn">Оформити передзамовлення</button>
                 </a>
             </div>
         </div>
     </div>
 </section>
         <!-- About -->
-        <section class="section__about">
+        <section class="section__about" id="about">
     <div class="container">
         <div class="about">
             <h2 class="about__title title">ПРО ЩОДЕННИК</h2>
@@ -69,7 +83,7 @@
     </div>
 </section>
         <!-- About -->
-        <section class="section__howUse">
+        <section class="section__howUse" id="howUse">
     <div class="container">
         <div class="howUse">
             <!-- Slider main container -->
@@ -131,17 +145,86 @@
                 <div class="whenUse__text">
                     У подарунок до кожного щоденника ми додаємо наші терапевтичні стікери. Їх малювала ілюстраторка Анастасія Андрійчук.
                 </div>
-                <div class="whenUse__sticker"><img src="../img/sticker.png" alt=""></div>
+                <div class="whenUse__sticker"><img src="./img/sticker.png" alt=""></div>
             </div>
         </div>
     </div>
 </section>
         <!-- Authors -->
-        
+        <section class="section__authors" id="authors">
+    <div class="container">
+        <div class="authors">
+            <div class="authors__text">
+                <h2 class="authors__title title">ПРО НАС</h2>
+                <div class="authors__text-item">
+                    <h3 class="authors__subtitle">Бренд "Mirror Books" — це серія терапевтичних щоденників. Перший з яких присвячений розумінню почуттів та основам емоційного інтелекту. Ми назвали його "Папір вислухає все".</h3>
+                    <div class="authors__descr">Терапевтичний щоденник є продуктом творчості психотерапевтки Анни Шийчук та продюсерки подкастів Юлії Кушнір. Вони познайомилися на Urban Space Radio і в 2018-му створили один з найуспішніших україномовних подкастів про психологію "Хтознаяк". А тепер роблять ще один якісний україномовний продукт.</div>
+                </div>
+            </div>
+            <div class="authors__one">
+                <div class="authors__one-img"><img src="../img/authors1.jpg" alt="img"></div>
+                <div class="authors__one-item">
+                    <p class="authors__one-text">"Вірю в користь щоденників всім серцем. Мої клієнти пишуть поміж терапевтичними сесіями. Я пишу щоденники вже багато років. Це чудовий інструмент, щоб вгамувати бурхливі емоції та подивитися на ситуацію спокійніше."</p>
+                    <p class="authors__one-text">Анна Шийчук, співзасновниця Mirror Books, психотерапевтка, засновниця Клініки психотерапії</p>
+                </div>
+            </div>
+            <div class="authors__two">
+                <div class="authors__two-img"><img src="../img/authors2.jpg" alt="img"></div>
+                <div class="authors__two-item">
+                    <p class="authors__two-text">"У періоди складних внутрішніх переживань дуже хотілося мати при собі щоденник, який б супроводжував мене. Те, як Аня веде в процесі, вчасно ставить питання - допомогло мені вдихати на повні груди. Тому створення цього щоденника і роботи над ним впершу чергу присвячую своєму внутрішньому світу."</p>
+                    <p class="authors__two-text">Юлія Кушнір, співзасновниця Mirror Books, проєктна менеджерка</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <!-- Order -->
+        <section class="section__order" id="order">
+    <div class="container">
+        <div class="order">
+            <div class="order__title title">ПАПІР ВИСЛУХАЄ ВСЕ</div>
+            <div class="order__descr">Терапевтичний щоденник.</div>
+            <div class="order__descr">Вартість 650 грн.</div>
+            <button class="modal__btn">Оформити передзамовлення</button>
+            <div class="order__text">Раді знайомству і чекаємо твоїх позначок в <a href="#">Instagram</a>! Цьом <span>♥</span></div>
+        </div>
+    </div>
+</section>
+        <!-- Modal -->
+        <!-- Modal -->
+<div class="modal__wrapper">
+    <div class="modal">
+        <div class="modal__close"><img src="./img/cancel.svg" alt="cancel" width="10px" height="10px"></div>
+        <div class="modal__title"><span>Ваше замовлення:</span></div>
+        <div class="modal__item">
+        </div>
+        <div class="modal__body">
+        </div>
+    </div>
+</div>
     </main>
 
     <!-- Footer -->
-    
+    <footer>
+    <div class="container">
+        <div class="footer">
+            <div class="footer__copy">
+                <div class="footer__descr">Mirror Books — терапевтичні щоденники</div>
+                <div class="footer__text">ФОП Шийчук А.О., 2022</div>
+            </div>
+            <div class="footer__items">
+                <div class="footer__item">
+                    <a href="#" class="footer__link">Політика конфіденційності</a>
+                    <a href="#" class="footer__link">Правила повернення</a>
+                </div>
+                <div class="footer__item footer__item-order">
+                    <a href="#" class="footer__link">Тел.:+38(097)50 84 244</a>
+                    <a href="#" class="footer__link">Написати в телеграм</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
 </body>
 

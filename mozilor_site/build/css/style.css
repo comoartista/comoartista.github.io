@@ -66,22 +66,15 @@ h6 {
   font-size: inherit;
 }
 
-.play,
-.stop {
-  width: 100px;
-  height: 100px;
-}
-
-.play img,
-.stop img {
-  width: 100%;
-}
-
 .container {
   max-width: 1148px;
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

@@ -1,24 +1,24 @@
-//Tilda
-const main = document.querySelector('main');
+// //Tilda
+// const main = document.querySelector('main');
 
-const audioControl = event => {
-  const clicked = event.target;
-  const btnGroup = clicked.parentElement;
-  const mp3 = btnGroup.previousElementSibling;
+// const audioControl = event => {
+//   const clicked = event.target;
+//   const btnGroup = clicked.parentElement;
+//   const mp3 = btnGroup.previousElementSibling;
 
-  if (clicked.matches('.play') && !mp3.paused) {
-    mp3.pause();
-  } else if (clicked.matches('.play') && !mp3.playing) {
-    mp3.play();
-  } else if (clicked.matches('.stop')) {
-    mp3.pause();
-    mp3.currentTime = 0;
-  } else {
-    return false;
-  }
-};
+//   if (clicked.matches('.play') && !mp3.paused) {
+//     mp3.pause();
+//   } else if (clicked.matches('.play') && !mp3.playing) {
+//     mp3.play();
+//   } else if (clicked.matches('.stop')) {
+//     mp3.pause();
+//     mp3.currentTime = 0;
+//   } else {
+//     return false;
+//   }
+// };
 
-main.onclick = audioControl;
+// main.onclick = audioControl;
 
 
 // Custom scripts
@@ -29,6 +29,8 @@ function burgerMenu() {
     const burger = document.querySelector('.burger')
     const menu = document.querySelector('.menu')
     const body = document.querySelector('body')
+    const item = document.querySelector('.menu__item')
+    
     burger.addEventListener('click', () => {
       if (!menu.classList.contains('active')) {
         menu.classList.add('active')
@@ -38,6 +40,19 @@ function burgerMenu() {
         menu.classList.remove('active')
         burger.classList.remove('active-burger')
         body.classList.remove('locked')
+      }
+    })
+
+    item.addEventListener('click', () => {
+      if (!menu.classList.contains('active')) {
+        menu.classList.add('active')
+        burger.classList.add('active-burger')
+        body.classList.add('locked')
+      } else {
+        menu.classList.remove('active')
+        burger.classList.remove('active-burger')
+        body.classList.remove('locked')
+        // target.classList.remove('active')
       }
     })
     // Вот тут мы ставим брейкпоинт навбара
@@ -65,6 +80,8 @@ function burgerMenu() {
   }
   window.addEventListener('scroll', fixedNav)
   
+  // fixedNav()
+
 //Main Pages Scripts
 if(document.querySelector('.body__main')) {
   const swiper = new Swiper('.swiper__innovation', {

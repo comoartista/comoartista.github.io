@@ -1,4 +1,83 @@
-// Footer
 footer {
-    display: block;
+    padding: 175px 0 100px;
+    background: $blue;
+    color: #ffffff;
+    @media (max-width: $breakpoint992) {
+        padding: 75px 0 75px;
+    }
+    @media (max-width: $breakpoint768) {
+        padding: 50px 0 50px;
+    }
+}
+
+.footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        @media (max-width: $breakpoint768) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;   
+        }
+		&__items {
+            margin-top: 3px;
+            display: flex;
+           
+            @media (max-width: $breakpoint768) {
+                flex-direction: column;  
+            }
+        }
+		&__descr {
+            width: 255px;
+            font-size: 20px;
+            line-height: 32px;
+            @media (max-width: $breakpoint768) {
+                text-align: center;
+            }
+        }
+		&__text {
+            &:nth-child(even) {
+                margin-top: 20px;
+                @media (max-width: $breakpoint480) { 
+                    margin-top: 10px;
+                }
+            }
+        }
+		&__item {
+            display: flex;
+            flex-direction: column;
+            &:nth-child(odd) {
+                margin-right: 120px;
+                @media (max-width: $breakpoint992) {
+                    margin-right: 20px;
+                }
+                @media (max-width: $breakpoint768) { 
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    margin-right: 0;
+                }
+                @media (max-width: $breakpoint480) { 
+                    margin-top: 10px;
+                    margin-bottom: 0px;
+                }
+            }
+        }   
+    &__link {
+        color: #ffffff;
+        &:hover {
+            text-decoration: underline;
+            background: transparent;
+            transition: .3s all ease;
+        }
+    }
+    &__item-order {
+        @media (max-width: $breakpoint768) { 
+            order: -1;
+            margin-top: 20px;
+        }
+        @media (max-width: $breakpoint480) { 
+            margin-top: 10px;
+        }
+    }
 }

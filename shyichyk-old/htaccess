@@ -1,0 +1,114 @@
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
+
+DirectoryIndex page12393622.html
+
+RewriteEngine On
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =http
+RewriteRule ^(.*)$ https://shyichuk\.com/$1 [R=301,L]
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =https
+RewriteCond %{HTTP_HOST} ^www\.shyichuk.com [NC]
+RewriteRule ^(.*)$ https://shyichuk\.com/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^storja-olivkovogo-gaju$ page5116672.html [NC]
+RewriteRule ^storja-olivkovogo-gaju/$ page5116672.html [NC]
+
+RewriteRule ^document/mailing$ page11975659.html [NC]
+RewriteRule ^document/mailing/$ page11975659.html [NC]
+
+RewriteRule ^price$ page9253366.html [NC]
+RewriteRule ^price/$ page9253366.html [NC]
+
+RewriteRule ^therapy$ page11077117.html [NC]
+RewriteRule ^therapy/$ page11077117.html [NC]
+
+RewriteRule ^materials$ page11149566.html [NC]
+RewriteRule ^materials/$ page11149566.html [NC]
+
+RewriteRule ^header$ page4556331.html [NC]
+RewriteRule ^header/$ page4556331.html [NC]
+
+RewriteRule ^team$ page12464622.html [NC]
+RewriteRule ^team/$ page12464622.html [NC]
+
+RewriteRule ^pdsumki-v-stosunkah$ page5128534.html [NC]
+RewriteRule ^pdsumki-v-stosunkah/$ page5128534.html [NC]
+
+RewriteRule ^primari-kolishnoi$ page5128562.html [NC]
+RewriteRule ^primari-kolishnoi/$ page5128562.html [NC]
+
+RewriteRule ^koli-vesillya$ page5128632.html [NC]
+RewriteRule ^koli-vesillya/$ page5128632.html [NC]
+
+RewriteRule ^tretij-zajvij$ page5128754.html [NC]
+RewriteRule ^tretij-zajvij/$ page5128754.html [NC]
+
+RewriteRule ^yak-zpsuvati-stosunki$ page5128768.html [NC]
+RewriteRule ^yak-zpsuvati-stosunki/$ page5128768.html [NC]
+
+RewriteRule ^teorya-emotsj$ page5128779.html [NC]
+RewriteRule ^teorya-emotsj/$ page5128779.html [NC]
+
+RewriteRule ^teorya-lyubov-dvoh-polovinok$ page5128825.html [NC]
+RewriteRule ^teorya-lyubov-dvoh-polovinok/$ page5128825.html [NC]
+
+RewriteRule ^pro-samootsnku-zhnok-komplmenti$ page5128860.html [NC]
+RewriteRule ^pro-samootsnku-zhnok-komplmenti/$ page5128860.html [NC]
+
+RewriteRule ^chogo-xoche-cholovik-vid-zhinky/$ page6128786.html [NC]
+RewriteRule ^chogo-xoche-cholovik-vid-zhinky//$ page6128786.html [NC]
+
+RewriteRule ^choho-khoche-zhinka-vid-cholovika$ page6129099.html [NC]
+RewriteRule ^choho-khoche-zhinka-vid-cholovika/$ page6129099.html [NC]
+
+RewriteRule ^spravzhni-prychyny-skutosti-zhinky-v-lizhku/$ page6129298.html [NC]
+RewriteRule ^spravzhni-prychyny-skutosti-zhinky-v-lizhku//$ page6129298.html [NC]
+
+RewriteRule ^chomu-tak-vazhlyvo-maty-khoroshu-podruhu/$ page6129410.html [NC]
+RewriteRule ^chomu-tak-vazhlyvo-maty-khoroshu-podruhu//$ page6129410.html [NC]
+
+RewriteRule ^zhinocha-prystrast-yak-yii-zapalyty/$ page6129464.html [NC]
+RewriteRule ^zhinocha-prystrast-yak-yii-zapalyty//$ page6129464.html [NC]
+
+RewriteRule ^film-natkhnennia-z-aromatom-zymovykh-sviat$ page6129534.html [NC]
+RewriteRule ^film-natkhnennia-z-aromatom-zymovykh-sviat/$ page6129534.html [NC]
+
+RewriteRule ^course1$ page6458113.html [NC]
+RewriteRule ^course1/$ page6458113.html [NC]
+
+RewriteRule ^course$ page6549084.html [NC]
+RewriteRule ^course/$ page6549084.html [NC]
+
+RewriteRule ^angels-care$ page8535337.html [NC]
+RewriteRule ^angels-care/$ page8535337.html [NC]
+
+RewriteRule ^yahr$ page8727103.html [NC]
+RewriteRule ^yahr/$ page8727103.html [NC]
+
+RewriteRule ^document/return$ page11975456.html [NC]
+RewriteRule ^document/return/$ page11975456.html [NC]
+
+RewriteRule ^document/offer$ page11975548.html [NC]
+RewriteRule ^document/offer/$ page11975548.html [NC]
+
+RewriteRule ^document/confidentiality$ page11975620.html [NC]
+RewriteRule ^document/confidentiality/$ page11975620.html [NC]
+
+RewriteRule ^zoom-workshop$ page16129961.html [NC]
+RewriteRule ^zoom-workshop/$ page16129961.html [NC]
+
+RewriteRule ^thanks-page$ page21193488.html [NC]
+RewriteRule ^thanks-page/$ page21193488.html [NC]
+
+RewriteRule ^mirror-books$ page25279102.html [NC]
+RewriteRule ^mirror-books/$ page25279102.html [NC]
+
+RewriteRule ^members/ ma_start.html [NC]
+
+RewriteRule ^favicon.ico$ https://static.tildacdn.com/tild3063-3062-4562-b438-376662356130/favicon4.ico [R=302,L]
+
