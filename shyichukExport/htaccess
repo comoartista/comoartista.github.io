@@ -1,0 +1,60 @@
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
+
+DirectoryIndex page12393622.html
+
+RewriteEngine On
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =http
+RewriteRule ^(.*)$ https://shyichuk\.com/$1 [R=301,L]
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =https
+RewriteCond %{HTTP_HOST} ^www\.shyichuk.com [NC]
+RewriteRule ^(.*)$ https://shyichuk\.com/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^document/mailing$ page11975659.html [NC]
+RewriteRule ^document/mailing/$ page11975659.html [NC]
+
+RewriteRule ^price$ page9253366.html [NC]
+RewriteRule ^price/$ page9253366.html [NC]
+
+RewriteRule ^therapy$ page11077117.html [NC]
+RewriteRule ^therapy/$ page11077117.html [NC]
+
+RewriteRule ^materials$ page11149566.html [NC]
+RewriteRule ^materials/$ page11149566.html [NC]
+
+RewriteRule ^header$ page4556331.html [NC]
+RewriteRule ^header/$ page4556331.html [NC]
+
+RewriteRule ^team$ page12464622.html [NC]
+RewriteRule ^team/$ page12464622.html [NC]
+
+RewriteRule ^course1$ page6458113.html [NC]
+RewriteRule ^course1/$ page6458113.html [NC]
+
+RewriteRule ^course$ page6549084.html [NC]
+RewriteRule ^course/$ page6549084.html [NC]
+
+RewriteRule ^document/return$ page11975456.html [NC]
+RewriteRule ^document/return/$ page11975456.html [NC]
+
+RewriteRule ^document/offer$ page11975548.html [NC]
+RewriteRule ^document/offer/$ page11975548.html [NC]
+
+RewriteRule ^document/confidentiality$ page11975620.html [NC]
+RewriteRule ^document/confidentiality/$ page11975620.html [NC]
+
+RewriteRule ^thanks-page$ page21193488.html [NC]
+RewriteRule ^thanks-page/$ page21193488.html [NC]
+
+RewriteRule ^mirror-books$ page25279102.html [NC]
+RewriteRule ^mirror-books/$ page25279102.html [NC]
+
+RewriteRule ^members/ ma_start.html [NC]
+
+RewriteRule ^favicon.ico$ https://static.tildacdn.com/tild3063-3062-4562-b438-376662356130/favicon4.ico [R=302,L]
+
